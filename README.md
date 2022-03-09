@@ -4,7 +4,7 @@ Integrantes:
 - Francisco Echenique: Tengo 17 años, me gusta aprender cosas nuevas y el deporte, soy graduado en DH en MKT digital y antes era editor de videos para diversos streamers. 
 - Matías Tecici:
 - Fernando Archain:
-- Paolo Botto:
+- Paolo Botto:tengo 40 años y siempre estoy en la busqueda de nuevos conocimientos
 - Nahuel Stellato:
 
 Sitios de referencia:

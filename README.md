@@ -1,7 +1,7 @@
 Nosotros elegimos hacer una tienda de calzado deportivo orientada a todo tipo de público interesado en zapatillas informales y/o deportivas.  
 
 Integrantes: 
-- Francisco Echenique:
+- Francisco Echenique: Tengo 17 años, me gusta aprender cosas nuevas y el deporte, soy graduado en DH en MKT digital y antes era editor de videos para diversos streamers. 
 - Matías Tecici:
 - Fernando Archain:
 - Paolo Botto:

@@ -8,10 +8,10 @@ Integrantes:
 - Nahuel Stellato:
 
 Sitios de referencia:
-1) https://www.moovbydexter.com.ar/home Elegimos Moov por su gran sinplicidad a nivel experiencia de usuario y por su estetica que hace hincapie en grandes imagenes. 
-2) https://avia.com.ar/ Elegimos Avia porque nos gusta la manera de categorizar los calzados. 
-3) https://www.dafiti.com.ar/ Elegimos Dafiti por la segmentación que tiene en cuanto a calzados. 
-4) https://www.sporting.com.ar/ Elegimos Sporting porque tiene un interfaz muy fácil de usar y comprender. 
+1) https://www.moovbydexter.com.ar/home Elegimos Moov por su gran simplicidad a nivel experiencia de usuario y por su estetica que hace hincapie en grandes imagenes. Tambien nos parecio muy util los filtros que usa para buscar un producto determinao. Ofrece todo tipo de calzado e indumentaria deportiva y apunta claramente a un publico amante de un estilo de vestir deportivo.
+2) https://avia.com.ar/ Elegimos Avia (porque nos gusta la manera de categorizar los calzados.) porque su fuerte son las imagenes grandes y dinamicas, de la mano de un UX muy simple y facil de entender. Apunta a un target que busca calzado informal o deportivo y ofrece solo calzado de ese estilo.
+3) https://www.dafiti.com.ar/ Elegimos Dafiti por la segmentación que tiene en cuanto a calzados.  
+4) https://www.sporting.com.ar/ Elegimos Sporting (porque tiene un interfaz muy fácil de usar y comprender.) Ofrece calzado e indumentaria adaptados al deporte, y tambien todo tipo de accesorios deportivos, apunta claramente a un target que busca todo lo necesario para realizar alguna actividad deportiva. Su detalle de producto es muy claro tanto por como muestra visualmente cada producto como por la descripcion que da.
 5) https://www.addnicetienda.com.ar/ Elegimos Addnice porque tiene una estética muy llamativa y tiene un home atractivo. 
 
 

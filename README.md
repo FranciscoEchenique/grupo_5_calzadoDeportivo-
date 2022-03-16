@@ -5,7 +5,7 @@ Integrantes:
 - Buenas, soy Matias Tecici, tengo 33 años, me gusta mucho la informatica en general y los deportes, y espero poder lanzar pronto mi carrera como programador web.
 - Fernando Archain:
 - Paolo Botto:tengo 40 años y siempre estoy en la busqueda de nuevos conocimientos
-- Nahuel Stellato:
+- Nahuel Stellato: 20 Años, me gusta la tecnologia, los deportes, la comida entre otras cosas, hago el curso para desarrollarme como programador.
 
 Sitios de referencia:
 1) https://www.moovbydexter.com.ar/home Elegimos Moov por su gran simplicidad a nivel experiencia de usuario y por su estetica que hace hincapie en grandes imagenes. Tambien nos parecio muy util los filtros que usa para buscar un producto determinao. Ofrece todo tipo de calzado e indumentaria deportiva y apunta claramente a un publico amante de un estilo de vestir deportivo.

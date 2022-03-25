@@ -14,3 +14,7 @@ app.listen(3500, () => {
 app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/home.html'))
 })
+
+app.get('/detalle-de-producto', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/detalle-de-producto.html'))
+})

@@ -2,7 +2,28 @@
     box-sizing: border-box;
 }
 
-.icono-carrito i{
-    width: 200px;
+.contenedor-flex-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
 }
+
+.barra-de-navegacion{
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+}
+
+
+.enlaces-barra-de-navegacion{
+    text-decoration: none;
+    color: black;
+}
+
+
+.logo-sportshoes{
+    width: 100px;
+}
+
+
 

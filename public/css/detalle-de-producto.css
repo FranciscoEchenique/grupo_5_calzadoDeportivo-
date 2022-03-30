@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+    background-color: sandybrown;
 }
 
 .barra-de-navegacion{
@@ -20,10 +21,37 @@
     color: black;
 }
 
+.contenedor-logo-sportshoes{
+  background-color: lightblue;
+}
+
 
 .logo-sportshoes{
     width: 100px;
 }
+
+.ruta-de-producto{
+    display: flex;
+}
+
+.contenedor-fotos-secundarias-botines{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.foto-secundaria-botines{
+    display: inline-block;
+    width: 10%;
+    padding: 5px;
+}
+
+.foto-principal-botines{
+    width: 40%;
+}
+
+
+
 
 
 

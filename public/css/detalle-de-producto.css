@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    background-color: sandybrown;
+   
 }
 
 .barra-de-navegacion{
@@ -22,7 +22,7 @@
 }
 
 .contenedor-logo-sportshoes{
-  background-color: lightblue;
+  background-color: white;
 }
 
 

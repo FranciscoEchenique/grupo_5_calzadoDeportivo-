@@ -2,7 +2,6 @@ Nosotros elegimos hacer una tienda de calzado deportivo orientada a todo tipo de
 
 Integrantes: 
 - Francisco Echenique: Tengo 17 años, me gusta aprender cosas nuevas y el deporte, soy graduado en DH en MKT digital y antes era editor de videos para diversos streamers. 
-- Buenas, soy Matias Tecici, tengo 33 años, me gusta mucho la informatica en general y los deportes, y espero poder lanzar pronto mi carrera como programador web.
 - Fernando Archain:
 - Paolo Botto:tengo 40 años y siempre estoy en la busqueda de nuevos conocimientos
 - Nahuel Stellato: 20 Años, me gusta la tecnologia, los deportes, la comida entre otras cosas, hago el curso para desarrollarme como programador.

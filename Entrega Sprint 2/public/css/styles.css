@@ -1,0 +1,873 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Noto Sans';
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --Amarillo: #EAC926;
+    --Gris-claro: #ebebeb;
+    --Negro: #000;
+    --Celeste: #219ebc;
+}
+body{
+    margin: 0;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Noto Sans';
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.seccion-mejores-productos-home{
+    margin-top: 10px;
+}
+.contenedor-flex-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.enlaces-barra-de-navegacion{
+    text-decoration: none;
+    color: black;
+}
+.logo-sportshoes-home{
+    width: 100px;
+    padding: 5px;
+    display: inline;
+}
+
+.topheader-home{
+    background-color: #ebebeb;
+    border: 2px solid #219ebc;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+}
+#descuento-primera-compra{
+    font-size: 10px;
+}
+.items-menu-home{
+    display: flex;
+    padding: 0;
+}
+.items-menu-home li{
+    list-style-type: none;
+    padding: 0 10px;
+}
+.items-menu-home li a:hover{
+    color: gray;
+}
+.items-menu-home li a{
+    text-decoration: none;
+    color: black;
+    transition: color 450ms;
+}
+.textos-header-home{
+    display: none;
+    text-align: center;
+    margin-left: 48px;
+}
+.textos-header-home a{
+    margin: 0 30px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    transition: color 450ms;
+}
+.textos-header-home a:hover{
+    color: gray;
+}
+.barra-de-busqueda-home{
+    position: relative;
+    display: none;
+}
+.barra-de-busqueda-home input{
+    background-color: white;
+    width: 210px;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    color: black;
+    height: 40px;
+    outline: none;
+    font-size: 18px;
+}
+.boton-buscar-home {
+    color: black;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+section .titulo-secciones-home{
+    text-align: center;
+    text-justify: center;
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+.barra-naranja{
+    background-color: #fb8500;
+    height: 20px;
+    margin-bottom: 10px;
+    border-radius: 1px;
+}
+main .seccion-mejores-productos-home img{
+    width: 80%;
+    box-shadow: 0 0 10px rgb(100, 100, 100);
+    margin: 10px 15px;
+}
+.articulos-home{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.articulos-mejores-productos-home{
+    width: 50%;
+    position: relative;
+}
+.titulo-mejor-producto-home{
+    margin: 0;
+    bottom: 10px;
+    position: relative;
+    left: 20px;
+}
+.precio-mejor-producto-home{
+    margin: 0;
+    position: relative;
+    left: 20px;
+    bottom: 10px;
+}
+.articulo-mejores-productos-home{
+    width: 92%;
+    margin: 0;
+}
+.foto-modelo-home img{
+    width: 80%;
+}
+.foto-modelo-home{
+    text-align: center;
+    margin-top: 90px;
+    position: relative;
+}
+.descuento-home {
+    color: #39b54a;
+    margin: 0;
+    font-weight: bolder;
+    position: relative;
+    left: 40px;
+    bottom: 10px;
+}
+.contenedor-precio-descuento-home{
+    display: flex;
+}
+.precio-tachado-puma-wild-rollin{    
+    color: gray;
+    text-decoration: line-through;
+    display: none;
+    position: absolute;
+    bottom: -29px;
+    left: 200px;
+    transition: display 450ms;
+}
+#precio-nike-air-force-1{    
+    color: gray;
+    text-decoration: line-through;
+    display: none;
+    position: absolute;
+    bottom: -29px;
+    left: 210px;
+    transition: display 450ms;
+}
+.contenedor-precio-tachado{
+    position: relative;
+}
+footer{
+    width: 100%;
+    background-color: #ededed;
+    margin-top: 30px;
+}
+.contenedor-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 10px;
+}
+.caja-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.caja-footer .logo img{
+    width: 180px;
+}
+.caja-footer .gracias{
+    max-width: 350px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.caja-footer h2{
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 700;
+}
+.caja-footer a{
+    margin-top: 10px;
+    color: #343434;
+    font-weight: 600;
+}
+.caja-footer a:hover{
+    opacity: 0.8;
+}
+.caja-footer a i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+.caja-copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 40px 0;
+}
+.caja-copyright p{
+    margin-top: 20px;
+    color: black;
+}
+.caja-copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+/*.boton-air-max-720-home{
+    border-radius: 5px;
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    left: 35%;
+    bottom: 8%;
+    font-family: 'Montserrat';
+}*/
+
+@media screen and (min-width:1014px){
+.articulos-mejores-productos-home{
+    width: 22%;
+}
+.articulos-mejores-productos-home img{
+    transition: box-shadow 450ms;
+}
+.articulos-mejores-productos-home img:hover{
+    box-shadow: 0 0 40px rgb(100, 100, 100);
+}
+.foto-modelo-home img {
+    width: 40%;
+}
+.barra-de-busqueda-home{
+    display: block;
+}
+.item-lupa-home{
+    display: none;
+}
+.item-desplegable-home{
+    display: none;
+}
+.textos-header-home{
+    display: flex;
+    flex-grow: 1;
+}
+.contenedor-precio-tachado:hover .precio-tachado-puma-wild-rollin{
+    display: block;
+}
+.contenedor-precio-tachado:hover #precio-nike-air-force-1{
+    display: block;
+}
+}
+@media screen and (max-width:414px){
+.articulos-home{
+    font-size: 12px;
+}
+}
+/*HOME*/
+/*HOME*/
+/*HOME*/
+
+
+/*LOGIN*/
+/*LOGIN*/
+/*LOGIN*/
+.main-login{
+    margin-top: 90px;
+}
+.logo-login{
+    text-align: center;
+}
+label, .color, .color2{
+    background-color: #ebebeb;
+    
+}
+.bordelogo{
+    background-color: #ebebeb;
+}
+    
+    .login{
+        font-family: sans-serif;
+        background-color: white;    
+        
+    }
+
+div .logo{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+
+.colorx{
+    color: antiquewhite;
+}
+.formu{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.espacio1{
+    padding: 2px;
+    padding-right: 30px;
+}
+.espacio2{
+    padding: 2px;
+    padding-right: 5px ;
+}
+
+ .iniciar{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    
+    
+}
+.contenedor{
+    background-color: #00468b;
+    color: white;
+    font-size:large;
+    padding: 5px;
+    
+    border-radius: 5%;
+}
+.centrar{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.check, .olvidaste{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    padding-left: 20px;
+    
+}
+.color{
+    color: #00468b;
+    padding-left: 20px;
+}
+.nosos{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.color2{
+    color: #00468b;
+    padding-left: 4px;
+}
+
+/*REGISTER*/
+/*REGISTER*/
+/*REGISTER*/
+
+.formulario-registro {
+    width: 360px;
+    background: #ebebeb;
+    padding: 30px;
+    margin: auto;
+    margin-top: 105px;
+    border-radius: 4px;
+    font-family: 'moto sans';
+    color: black;
+}
+
+.formulario-registro h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.formulario-registro .botones {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    border: 1px solid #000000;
+    font-family: 'moto sans';
+    font-size: 14px;
+}
+
+.formulario-registro p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.formulario-registro a {
+    text-decoration: none;
+}
+
+.formulario-registro a:visited {
+    text-decoration: none;
+    color: #219ebc;
+}
+
+.formulario-registro .boton-registro {
+    width: 100%;
+    padding: 5px;
+    margin: 16px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*DETALLE DE PRODUCTO*/
+
+/*------------------------------- Detalle -------------------------------*/
+
+.main-detail{
+    width: 90%;
+    margin: auto;
+    margin-top: 20%;
+}
+
+.section-detail {
+    text-align: center;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    background-color: white;
+}
+
+.imagen-detail {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.descripcion-articulo-detail {
+    border-top: 1px solid var(--Gris-claro);
+    position: relative;
+    border-bottom: 1px solid var(--Gris-claro);
+}
+
+.precio-oferta-detail {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.nombre-detail {
+    width: 70%;
+    font-size: 16px;
+    margin: auto;
+}
+
+.precio-detail {
+    width: 40%;
+    font-size: 14px;
+    margin: auto;
+}
+
+.oferta-detail {
+    width: 40%;
+    font-size: 14px;
+    color: var(--Verde);
+    margin: auto;
+}
+
+.agregar-detail {
+    width: 30%;
+    margin: auto;
+    margin-top: 1%;
+}
+
+.descripcion-detail {
+    border-bottom: 1px solid var(--Gris-claro);
+    color: var(--Gris-oscuro);
+    font-size: 10px;
+    text-align: left;
+    margin: auto;
+}
+
+.detalle-detail {
+    text-align: center;
+    font-size: 16px;
+}
+
+.descripcion-detail p {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.colores-detail {
+    border-bottom: 1px solid var(--Gris-claro);
+    display: flex;
+    flex-direction: row;
+}
+
+.colores-top-detail {
+    width: 71%;
+    font-size: 16px;
+    margin: auto;
+}
+
+.color-producto-detail {
+    margin: auto;
+    width: 30%;
+}
+
+.talles-detail {
+    display: flex;
+}
+
+.talle-detail {
+    border-radius: 20%;
+    margin: auto;
+    margin-top: 10px;
+    width: 30%;
+}
+
+/*------------------------------- Carrito -------------------------------*/
+
+.main-carrito {
+    width: 90%;
+    margin: auto;
+    margin-top: 30%;
+}
+
+.carrito-carrito {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 8%;
+}
+
+.productos-carrito {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.producto-carrito {
+    border: 4px solid var(--Celeste);
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    background-color: white;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.imagen-producto-carrito {
+    width: 70%;
+    margin: auto;
+}
+
+.nombre-carrito {
+    margin-bottom: 1%;
+}
+
+.precio-carrito {
+    margin-bottom: 1%;
+}
+
+#cant {
+    margin-top: 2%;
+    margin-bottom: 7%;
+}
+.label-carrito {
+    display: block;
+}
+
+#cant,
+.label-carrito {
+    margin: auto;
+}
+
+table, th, td {
+    text-align: center;
+    margin: auto;
+    margin-top: 7%;
+    font-size: 11px;
+    width: 90%;
+    border:1px solid var(--Negro);
+  }
+ 
+.boton-carrito {
+    margin: auto;
+    margin-top: 5%;
+    width: 50%;
+    transition: all 0.5s;
+}  
+
+.boton-carrito:hover {
+    background-color: var(--Celeste);
+    color: var(--Gris-claro);
+}
+
+
+/*---------------------------- Media Queries ----------------------------*/
+
+@media (min-width: 481px) {
+
+    .main-detail{
+        margin: auto;
+        margin-top: 10%;
+    }
+
+    .nombre-detail {
+        font-size: 20px;
+    }
+    
+    .precio-detail {
+        font-size: 16px;
+    }
+    
+    .oferta-detail {
+        font-size: 16px;
+    }
+    
+    .descripcion-detail {
+        font-size: 14px;
+    }
+    
+    .detalle-detail {
+        font-size: 20px;
+    }
+    
+    
+    .colores-top-detail {
+        font-size: 20px;
+    }
+
+    .talles-detail {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .talles-detail p {
+        margin: auto;
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .talle-detail {
+        width: 30%;
+    }
+
+    .main-carrito {
+        margin: auto;
+        margin-top: 20%;
+    }
+
+    .carrito-carrito {
+    font-size: 24px;
+}
+
+    .nombre-carrito, .precio-carrito, .label-carrito, #cant {
+    margin: auto;
+    font-size: 18px;
+}
+
+    table, th, td {
+    width: 100%;
+    font-size: 14px;
+}
+
+    .boton-carrito {
+    width: 65%;
+    font-size: 18px;
+}
+}
+
+@media (min-width: 768px) {
+
+    .main-detail{
+        margin: auto;
+        margin-top: 10%;
+    }
+
+    .section-detail {
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+    }
+
+    .imagen-producto-detail {
+        width: 50%;
+        margin: 0;
+        border-bottom: 1px solid var(--Gris-claro);
+    }
+    .descripcion-articulo-detail {
+        width: 50%;
+        margin: 0;
+    }
+
+    .nombre-detail {
+        font-size: 21px;
+        margin-top: 6%;
+    }
+
+    .precio-detail {
+        font-size: 18px;
+        width: 100%;
+        margin: 6%;
+    }
+
+    .oferta-detail {
+        width: 100%;
+        font-size: 18px;
+        margin: 4%;
+    }
+
+    .agregar-detail {
+        font-size: 18px;
+        width: 70%
+    }
+
+    .detalle-detail {
+        font-size: 21px;
+    }
+
+    .descripcion-detail {
+        width: 100%;
+        margin: 0;
+    }
+
+    .colores-detail {
+        width: 80%;
+    }
+
+    .talles-detail {
+        width: 20%;
+        margin: 0%;
+    }
+
+    .main-carrito {
+        margin: auto;
+        margin-top: 15%;
+    }
+    .carrito-carrito {
+        font-size: 28px;
+        margin-bottom: 5%;
+    }
+
+    .productos-carrito {
+        flex-direction: row;
+    }
+
+    .producto-carrito {
+        width: 45%;
+        margin: 2%;
+    }
+
+    .nombre-carrito, .precio-carrito, .label-carrito, #cant {
+        margin: auto;
+        font-size: 20px;
+    }
+
+    table, th, td {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .boton-carrito {
+        width: 70%;
+        font-size: 20px;
+        margin-bottom: 5%;
+    }
+
+}
+
+@media (min-width: 1279px) {
+
+    .imagen-producto-detail {
+        border-bottom: 1px solid var(--Gris-claro);
+    }
+
+    .nombre-detail {
+        font-size: 24px;
+        margin-top: 6%;
+    }
+
+    .precio-detail {
+        font-size: 20px;
+    }
+
+    .oferta-detail {
+        font-size: 20px;
+    }
+
+    .agregar-detail {
+        font-size: 20px;
+    }
+
+    .detalle-detail {
+        font-size: 24px;
+    }
+
+    .colores-top-detail {
+        font-size: 24px;
+    }
+    
+    .talles-detail p{
+        font-size: 24px;
+    }
+
+    .main-carrito {
+        margin: auto;
+        margin-top: 10%;
+    }
+
+    .carrito-carrito {
+        font-size: 32px;
+    }
+
+    .producto-carrito {
+        width: 30%;
+        margin: 1.65%;
+    }
+
+    .nombre-carrito, .precio-carrito, .label-carrito, #cant {
+        margin: auto;
+        font-size: 24px;
+    }
+
+    table, th, td {
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .boton-carrito {
+        width: 80%;
+        font-size: 26px;
+        margin-bottom: 5%;
+    }
+
+}

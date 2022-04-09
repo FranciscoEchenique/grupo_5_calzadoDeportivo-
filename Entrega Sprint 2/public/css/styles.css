@@ -170,8 +170,8 @@ main .seccion-mejores-productos-home img{
     text-decoration: line-through;
     display: none;
     position: absolute;
-    bottom: -29px;
-    left: 200px;
+    bottom: -33px;
+    left: 175px;
     transition: display 450ms;
 }
 #precio-nike-air-force-1{    
@@ -179,8 +179,8 @@ main .seccion-mejores-productos-home img{
     text-decoration: line-through;
     display: none;
     position: absolute;
-    bottom: -29px;
-    left: 210px;
+    bottom: -33px;
+    left: 180px;
     transition: display 450ms;
 }
 .contenedor-precio-tachado{
@@ -623,7 +623,8 @@ table, th, td {
     margin: auto;
     margin-top: 5%;
     width: 50%;
-    transition: all 0.5s;
+    transition: background-color 0.5s;
+    transition: color 0.5s;
 }  
 
 .boton-carrito:hover {

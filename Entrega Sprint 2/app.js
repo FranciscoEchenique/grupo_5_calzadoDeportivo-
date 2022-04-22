@@ -1,33 +1,27 @@
 const express = require('express');
 const path = require('path');
-
+const mainRoute = require('./routes/mainRoute.js');
+const detalleRoute = require('./routes/detalleRoute')
+const carritoRoute = require('./routes/carritoRoute');
+const registerRoute = require('./routes/registerRoute');
+const loginRoute = require('./routes/loginRoute');
 const app = express();
 
-const publicPath = path.resolve(__dirname, './public')
+app.set('view engine', 'ejs');
 
-app.use( express.static(publicPath) );
+app.use(express.static('public'));
 
 app.listen(3500, () => {
     console.log('servidor corriendo en el puerto 3500');
 })
 
-app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/home.html'))
-})
+app.get('/', mainRoute);
 
-app.get('/detalle-de-producto', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/detalle-de-producto.html'))
-})
+app.get('/detalle-de-producto', detalleRoute);
 
-app.get('/carrito', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/carrito.html'))
-})
+app.get('/carrito', carritoRoute);
 
-app.get('/registro', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/registro.html'))
-})
+app.get('/register', registerRoute);
 
-app.get('/login', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/login.html'))
-})
+app.get('/login', loginRoute);
 

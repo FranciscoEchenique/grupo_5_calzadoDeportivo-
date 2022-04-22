@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://kit.fontawesome.com/8cc76fc728.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <title>Detalle de producto</title>
+        </head>
+</head>
+
+<body>
+    <%- include('./partials/header') %>
+    <main class="main-detail">
+        <section class="section-detail">
+            <article class='imagen-producto-detail articles'>
+                    <img class="imagen-detail" src=".\images\botines.jpg" alt="Botines">
+                </article>
+                <article class='descripcion-articulo-detail articles'>
+
+                    <div class='precio-oferta-detail'>
+                        <p class='nombre-detail'>BOTINES DE FUTBOL ADIDAS</p>
+                        <p class='precio-detail'>$ 6.770</p>
+                        <p class='oferta-detail'>10% OFF</p>
+                        <button type="button" class="agregar-detail">Agregar al carrito</button>
+                        <br>
+                    </article>
+                    <article class='descripcion-detail articles'>
+                        <br>
+                        <p class="detalle-detail">DETALLES</p>
+                        <br>
+                        <p>Algunos jugadores hablan de un buen juego.</p>
+                        <p>Pero los mejores lo sienten.</p>
+                        <p>Ponete en contacto con tus sentidos y elevá tu juego con el Copa Sense.</p>
+                        <p>Estos botines de fútbol ADIDAS cuentan con cuero suave para un primer toque suave.</p>
+                        <p>La parte superior sin costuras se amolda alrededor del contorno de tu pie para un ajuste
+                            cómodo.</p>
+                        <p>La suela ofrece una alta tracción en terrenos firmes.</p>
+                        <br>
+                    </article>
+                    <article class='colores-detail articles'>
+                        <p class="colores-top-detail">COLORES</p>
+                        <div class="color-producto-detail">
+                            <img class="imagen-detail" src=".\images\color-uno.jpg" alt="Botines-color-uno">
+                        </div>
+                        <div class="color-producto-detail">
+                            <img class="imagen-detail" src=".\images\color-dos.jpg" alt="Botines-color-dos">
+                        </div>
+                        <div class="color-producto-detail">
+                            <img class="imagen-detail" src=".\images\color-tres.jpg" alt="Botines-color-tres">
+                        </div>
+                    </article>
+                    <article class="talles-detail articles">
+                        <p>TALLES</p>
+                        <button type="button" class="talle-detail">42</button>
+                        <button type="button" class="talle-detail">44</button>
+                    </article>
+            </article>
+        </section>
+    </main>
+    <%- include('./partials/footer') %>
+</body>
+
+</html>

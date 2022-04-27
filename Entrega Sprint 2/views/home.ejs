@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <script src="https://kit.fontawesome.com/8cc76fc728.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
@@ -25,7 +25,7 @@
             <div class="articulos-home">
                 <% for (let i = 0; i < mejoresProductos.length; i++) { %>
                 <article class="articulos-mejores-productos-home">
-                    <a href="#"><img src=<%= mejoresProductos[i].foto %> alt=<%= mejoresProductos[i].nombre %>></a>
+                    <a href="/detalle-de-producto/mejores-productos/<%= mejoresProductos[i].id %>"><img src=<%= mejoresProductos[i].foto %> alt=<%= mejoresProductos[i].nombre %>></a>
                     <div class="articulo-mejores-productos-home">
                         <p class="titulo-mejor-producto-home">
                             <%= mejoresProductos[i].nombre %>
@@ -44,7 +44,7 @@
             <div class="articulos-home">
                 <% for (let i = 0; i < masComprado.length; i++) { %>
             <article class="articulos-mejores-productos-home">
-                <a href="#"><img src=<%= masComprado[i].foto %>  alt=<%= masComprado[i].nombre %>></a>
+                <a href="/detalle-de-producto/mas-comprado/<%= masComprado[i].id %>"><img src=<%= masComprado[i].foto %>  alt=<%= masComprado[i].nombre %>></a>
                 <div class="articulo-mejores-productos-home">
                     <p class="titulo-mejor-producto-home">
                         <%= masComprado[i].nombre %>
@@ -64,7 +64,7 @@
                 <% for (let i = 0; i < mejoresOfertas.length; i++) { %>
             <article class="articulos-mejores-productos-home">
                 <div class="contenedor-precio-tachado">
-                <a href="#"><img src=<%= mejoresOfertas[i].foto %> alt=<%= mejoresOfertas[i].nombre %>></a>
+                <a href="/detalle-de-producto/mejores-ofertas/<%= mejoresOfertas[i].id %>"><img src=<%= mejoresOfertas[i].foto %> alt=<%= mejoresOfertas[i].nombre %>></a>
                 <p class="precio-tachado-puma-wild-rollin"><%= mejoresOfertas[i].precioTachado %></p>
                 </div>
                 <div class="articulo-mejores-productos-home">   

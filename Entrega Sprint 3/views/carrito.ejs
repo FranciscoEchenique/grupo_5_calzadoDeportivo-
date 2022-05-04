@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/8cc76fc728.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <title>Tienda de SportShoes</title>
+    </head>
+    <body>
+        <%- include('./partials/header') %>
+        <main class="main-carrito">
+            <h4 class="carrito-carrito">Carrito de compras</h4>
+            <section class='productos-carrito'>
+                <article class="producto-carrito">
+                    <div class='imagen-producto-carrito'>
+                        <img class='imagen-producto-carrito' src="/images/zapatillas-celestes.jpg" alt="zapatillas-celestes">
+                    </div>
+                    <div class='descripcion-articulo-carrito'>
+                        <div class='descripcion-carrito'>
+                            <p class="nombre-carrito">Jonhson Celestes</p>
+                            <p class='precio-carrito'>$ 9.780</p>
+                            <label for="cant" class="label-carrito">Cantidad a comprar</label>
+                            <input type="text" id="cant" name="cant" placeholder="1">
+                        </div>
+                    </div>
+                </article>
+                <article class="producto-carrito">
+                    <div class='imagen-producto-carrito'>
+                        <img class="imagen-producto-carrito"src="/images/zapatillas-amarillas.jpg" alt="zapatillas-amarillas">
+                    </div>
+                    <div class='descripcion-articulo-carrito'>
+                        <div class='descripcion-carrito'>
+                            <p class="nombre-carrito">Power Amarillas</p>
+                            <p class='precio-carrito'>$ 11.200</p>
+                            <label for="cant" class="label-carrito">Cantidad a comprar</label>
+                            <input type="text" id="cant" name="cant" placeholder="1">
+                        </div>
+                    </div>
+                </article>
+                <article class="producto-carrito">
+                    <div class='imagen-producto-carrito'>
+                        <img class='imagen-producto-carrito' src="/images/nike-verdes.jpg" alt="nike-verdes">
+                    </div>
+                    <div class='descripcion-articulo-carrito'>
+                        <div class='descripcion-carrito'>
+                            <p class="nombre-carrito">Nike verdes</p>
+                            <p class='precio-carrito'>$ 18.500</p>
+                            <label for="cant" class="label-carrito">Cantidad a comprar</label>
+                            <input type="text" id="cant" name="cant" placeholder="1">
+                        </div>
+                    </div>
+                </article>
+                <table>
+                    <tr>
+                      <th> Descripción </th>
+                      <th> Cantidad </th>
+                      <th> Precio </th>
+                      <th> Total </th>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <td> Jonhson Celestes </td>
+                      <td> 1</td>
+                      <td> $9.780</td>
+                      <td> $9.780</td>
+                      <th> Eliminar </th>
+                    </tr>
+                    <tr>
+                        <td> Power Amarillas </td>
+                        <td> 3 </td>
+                        <td> $11.200</td>
+                        <td> $33.600</td>
+                        <th> Eliminar </th>
+                      </tr>
+                      <tr>
+                        <td> Nike verdes </td>
+                        <td> 2</td>
+                        <td> $18.500</td>
+                        <td> $37.000</td>
+                        <th> Eliminar </th>
+                      </tr>
+                  </table>
+                  <button type="submit" class="boton-carrito">Finalizar Compra</button>
+            </section>
+        </main>
+        <%- include('./partials/footer') %>
+    </body>
+</html>

@@ -5,3 +5,12 @@ Bien: Nos dividimos el trabajo entre todos y cada uno realizo de manera responsa
 Mal: Cada integrante presto atención solo a la tarea especifica que le toco sin interiorizarse en  lo que hizo el resto de los compañeros, lo que provoco que no haya una buena armonía entre todos la diferentes wireframes.
 
 Mejorar: Tenemos que estar bien al tanto del trabajo realizado por cada integrante para seguir todos una misma idea, tanto en estructura como en estilos.
+
+sprint 3: 
+renderizamos la vistas
+seguimos practicando con git para colaborar con el proyecto
+
+sprint 4:
+modificamos los controladores y creamos el archivo.json con los productos para poder hacer agregar modificar y recorrer la lista de productos
+seguimos practicando con git para crear ramas y trabajar colaborativamente
+

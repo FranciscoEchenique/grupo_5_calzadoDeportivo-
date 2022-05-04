@@ -34,17 +34,17 @@ const masCompradoRuta = (req, res) => {
 };
 
 const mejoresProductosRuta = (req, res) => {
-    const idProducto = parseInt(req.params.iDproducto);
+    const id = parseInt(req.params.id);
 
-    let producto = []
+    const producto = {};
 
-    mejoresProductos.forEach(function (elemento){
-        if (elemento.id === idProducto) {
-            producto.push(elemento)
+    mejoresProductos.forEach( (element) => {
+        if (element.id === id){
+            producto = element
         }
-    })
+    });
 
-    res.render('detalle-de-producto', {producto: producto});
+    res.render('detalle-de-producto', {producto});
 };
 
 const detalleController = {

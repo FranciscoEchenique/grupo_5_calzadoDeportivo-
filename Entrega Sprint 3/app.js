@@ -5,6 +5,7 @@ const detalleRoute = require('./routes/detalleRoute')
 const carritoRoute = require('./routes/carritoRoute');
 const registerRoute = require('./routes/registerRoute');
 const loginRoute = require('./routes/loginRoute');
+const productoRoute = require('./routes/productoRoute');
 const app = express();
 const methodOverride = require('method-override');
 
@@ -24,6 +25,8 @@ app.use('/carrito', carritoRoute);
 app.use('/register', registerRoute);
 
 app.use('/login', loginRoute);
+
+app.use('/productos', productoRoute);
 
 app.use((req, res, next) =>{
     res.status(404).send("Error")

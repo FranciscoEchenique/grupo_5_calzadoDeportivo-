@@ -1,9 +1,13 @@
 const crear = (req, res) => {
     res.render('formulario-creacion');
 };
-
-const loginController = {
-    crear,
+const almacenar = (req, res) => {
+    res.redirect('/productos');
 }
 
-module.exports = loginController;
+const productoController = {
+    crear,
+    almacenar,
+}
+
+module.exports = productoController;

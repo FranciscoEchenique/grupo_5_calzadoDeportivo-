@@ -874,11 +874,12 @@ table, th, td {
 }
 /*------------------------------- Formulario creación productos -------------------------------*/
 .formulario-creacion-productos{
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    background-color: #ebebeb;
-    width: auto;
+    background-color: #205375;
+    width: 1000px;
+    border-radius: 4px;
+    padding: 10px;
+    margin: auto;
 }
 .titulo-creacion-productos{
     margin-top: 100px;
@@ -888,4 +889,36 @@ table, th, td {
 .label-creacion-productos{
     display: inline-block;
     font-size: 16px;
+    background-color: #205375;
+    color: white;
+}
+.input-creacion-productos{
+    display: inline-block;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 100%;
+    padding: 0 15px;
+}
+.contenedores-formulario-creacion{
+    max-width: 70%;
+    padding: 20px;
+    margin: auto;
+}
+.contenedor-boton-creacion{
+    max-width: 100%;
+    text-align: center;
+}
+textarea.input-creacion-productos{
+    min-height: 140px;
+}
+.boton-creacion{
+    text-align: center;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #39b54a;
+    color: white;
+    width: 150px;
+    height: 60px;
 }

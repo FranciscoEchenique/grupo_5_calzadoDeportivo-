@@ -16,22 +16,40 @@
     <%- include('./partials/header') %>
     <main>
         <h2 class="titulo-creacion-productos">Formulario creación de productos</h2>
-        <form class="formulario-creacion-productos" action="/" method="POST">
-            
-            <div class="div-creacion-productos">
+        <form class="formulario-creacion-productos" action="/mejores-productos/1" method="POST">
+        <div class="contenedores-formulario-creacion">
             <label for="nombre" class="label-creacion-productos">Nombre del producto:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Ej: Zapatillas Nike Air Max">
-            </div>
-            
-            <div class="div-creacion-productos">
-            <label for="precio" class="label-creacion-productos">Precio del producto:</label>
-            <input type="text" id="precio" name="precio" placeholder="Ej: 1.000$">
-            </div>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: Zapatillas Nike Air Max" class="input-creacion-productos">
+        </div>
 
-            <div class="div-creacion-productos">  
+        <div class="contenedores-formulario-creacion">
+            <label for="precio" class="label-creacion-productos">Precio del producto:</label>
+            <input type="text" id="precio" name="precio" placeholder="Ej: 1.000$" class="input-creacion-productos">
+        </div>
+
+        <div class="contenedores-formulario-creacion">
             <label for="descuento" class="label-creacion-productos">Descuento del producto:</label>
-            <input type="text" id="descuento" name="descuento" placeholder="Ej: 10% OFF">
-            </div>
+            <input type="text" id="descuento" name="descuento" placeholder="Ej: 10% OFF" class="input-creacion-productos">
+        </div>
+
+        <div class="contenedores-formulario-creacion">
+            <label for="categoria" class="label-creacion-productos">Categoría:</label>
+            <select name="categoria" id="categoria">
+                <option value="">Elegí</option>
+                <option value="mejores-productos">Mejores productos</option>
+                <option value="mas-comprados">Más comprados</option>
+                <option value="mejores-ofertas">Mejores ofertas</option>
+            </select>
+        </div>
+
+        <div class="contenedores-formulario-creacion">
+            <label for="descripcion" class="label-creacion-productos">Descripción del producto:</label>
+            <textarea name="descripcion" id="descripcion" class="input-creacion-productos"></textarea>
+        </div>
+
+        <div class="contenedor-boton-creacion">
+            <input type="submit" value="Publicar" class="boton-creacion">
+        </div>
         </form>
     </main>
     </body>

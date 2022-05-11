@@ -20,14 +20,14 @@
     <main class="main-detail">
         <section class="section-detail">
             <article class='imagen-producto-detail articles'>
-                    <img class="imagen-detail" src= <%= producto.foto %> alt="Botines">
+                    <img class="imagen-detail" src=<%= producto.foto %> alt=<%= producto.nombre %>>
                 </article>
                 <article class='descripcion-articulo-detail articles'>
 
                     <div class='precio-oferta-detail'>
                         <p class='nombre-detail'> <%= producto.nombre %> </p>
-                        <p class='precio-detail'>$ 6.770</p>
-                        <p class='oferta-detail'>10% OFF</p>
+                        <p class='precio-detail'><%= producto.precio %></p>
+                        <p class='oferta-detail'><%= producto.descuento %></p>
                         <button type="button" class="agregar-detail">Agregar al carrito</button>
                         <br>
                     </article>
@@ -35,13 +35,7 @@
                         <br>
                         <p class="detalle-detail">DETALLES</p>
                         <br>
-                        <p>Algunos jugadores hablan de un buen juego.</p>
-                        <p>Pero los mejores lo sienten.</p>
-                        <p>Ponete en contacto con tus sentidos y elevá tu juego con el Copa Sense.</p>
-                        <p>Estos botines de fútbol ADIDAS cuentan con cuero suave para un primer toque suave.</p>
-                        <p>La parte superior sin costuras se amolda alrededor del contorno de tu pie para un ajuste
-                            cómodo.</p>
-                        <p>La suela ofrece una alta tracción en terrenos firmes.</p>
+                        <p><%=producto.descripcion %></p>
                         <br>
                     </article>
                     <article class='colores-detail articles'>

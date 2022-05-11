@@ -524,6 +524,8 @@ div .logo{
 .descripcion-detail p {
     margin-left: 5%;
     margin-right: 5%;
+    max-width: 40%;
+    text-align: center;
 }
 
 .colores-detail {

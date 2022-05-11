@@ -1,50 +1,43 @@
-const mejoresProductos = [
-    {
-        nombre: "Nike Air Max 720",
-        foto: "/images/nike-air-max-720.jpg",
-        precio: "$20.000",
-        id: "1",
-    },
-    {
-        nombre: "Nike Air Max 97",
-        foto: "/images/nike-air-max-97.jpg",
-        precio: "$17.000",
-        id: "2",
-    },
-    {
-        nombre: "Adidas Coreracer",
-        foto: "/images/adidas-running.jpg",
-        precio: "$9.000",
-        id: "3",
-    },
-    {
-        nombre: "Adidas Ozweego",
-        foto: "/images/adidas-ozweego.jpg",
-        precio: "$11.000",
-        id: "4",
-    },
-]
+const fs = require('fs');
+const path = require('path');
+
+const productos_path = path.join(__dirname, '../data/productsDataBase.json');
+const leerProductos = fs.readFileSync(productos_path, 'utf-8');
+const productos = JSON.parse(leerProductos);
+
+const mejoresProductos = productos.filter(function(elemento){ return elemento.categoria === "mejores-productos"});
+
+const masComprado = productos.filter(function(elemento){ return elemento.categoria === "mas-comprado"});
+
+const mejoresOfertas = productos.filter(function(elemento){ return elemento.categoria === "mejores-ofertas"});
 
 const mejoresOfertasRuta = (req, res) => {
-    res.render('detalle-de-producto');
+    const id = req.params.iDproducto;
+
+    const productoMejoresOferas =  mejoresOfertas.find((element) =>{
+        return element.id == id
+    });
+    
+    res.render('detalle-de-producto', {producto: productoMejoresOferas});
 };
 
 const masCompradoRuta = (req, res) => {
-    res.render('detalle-de-producto');
+    const id = req.params.iDproducto;
+
+    const productoMasComprado = masComprado.find((element) =>{
+        return element.id == id
+    });
+    
+    res.render('detalle-de-producto', {producto: productoMasComprado});
 };
 
 const mejoresProductosRuta = (req, res) => {
-    const id = parseInt(req.params.id);
+    const id = req.params.iDproducto;
 
-    const producto = {};
-
-    mejoresProductos.forEach( (element) => {
-        if (element.id === id){
-            producto = element
-        }
+    const mejorProducto = mejoresProductos.find((element) =>{
+        return element.id == id
     });
-
-    res.render('detalle-de-producto', {producto});
+    res.render('detalle-de-producto', {producto: mejorProducto});
 };
 
 const detalleController = {

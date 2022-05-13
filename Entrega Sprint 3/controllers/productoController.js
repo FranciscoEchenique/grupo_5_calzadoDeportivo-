@@ -11,6 +11,7 @@ const crear = (req, res) => {
 const almacenar = (req, res) => {
     const id = productos.length + 1;
     const nombre = req.body.nombre;
+    const foto = req.file.filename;
     const precio = req.body.precio;
     const descuento = req.body.descuento;
     const categoria = req.body.categoria;
@@ -18,12 +19,14 @@ const almacenar = (req, res) => {
 
     productos.push({
         id,
+        foto,
         nombre,
         precio,
         descuento,
         categoria,
         descripcion
     })
+
     const nuevoProductoString = JSON.stringify(productos, null, 2);
     fs.writeFileSync(productos_path, nuevoProductoString);
     res.redirect('/detalle-de-producto/' + req.body.categoria + '/' + id);

@@ -924,3 +924,8 @@ textarea.input-creacion-productos{
     width: 150px;
     height: 60px;
 }
+input#imagenProducto {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: black;
+}

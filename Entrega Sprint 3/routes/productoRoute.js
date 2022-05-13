@@ -23,4 +23,7 @@ router.post('/crear', fileUpload.single('imagenProducto'), productoController.al
 router.get('/editar/:iDproducto', productoController.editar);
 router.put('/editar/:iDproducto', productoController.actualizar);
 
+router.get('/eliminar/:iDproducto', productoController.mostrarEliminar);
+router.delete('/eliminar/:iDproducto', productoController.eliminar);
+
 module.exports = router;

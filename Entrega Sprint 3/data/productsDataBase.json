@@ -110,5 +110,14 @@
     "descuento": "18% OFF",
     "id": "12",
     "descripcion": "Con su silueta dinámica y detalles de colores vivos, las Wild Rider Rollin' te transportarán a una nueva temporada de estilo urbano. Inspiradas en la cultura juvenil, estas zapatillas de última generación combinan el estilo atlético con elementos innovadores, logrando un look cargado de energía."
+  },
+  {
+    "id": 13,
+    "foto": "/images/1652407466703.jpg",
+    "nombre": "Zapatillas Nike Air Max 200",
+    "precio": "22.000$",
+    "descuento": "15% OFF",
+    "categoria": "mejores-ofertas",
+    "descripcion": "Inspiradas en los patrones de energía que irradian de la tierra, como el flujo de lava y las ondas rítmicas del océano, las Nike Air Max 200 cuentan con la unidad Max Air más grande hasta la fecha. Con una amortiguación excepcional y detalles modernos, esta zapatilla irradia una sensación de frescor al mismo tiempo que ofrece una comodidad extrema."
   }
 ]

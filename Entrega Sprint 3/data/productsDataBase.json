@@ -4,7 +4,7 @@
     "foto": "/images/nike-air-max-720.jpg",
     "precio": "$20.000",
     "categoria": "mejores-productos",
-    "id": "1",
+    "id": 1,
     "descuento": "",
     "descripcion": "Este modelo ofrece un grosor de 3,8 cm, que supera en un 19% al modelo anterior. Pero, además, el sistema de amortiguación de este modelo es ahora visible desde cualquier dirección, en 360º, tanto horizontal como verticalmente. De allí, su nuevo nombre “720”."
   },
@@ -13,7 +13,7 @@
     "foto": "/images/nike-air-max-97.jpg",
     "precio": "$17.000",
     "categoria": "mejores-productos",
-    "id": "2",
+    "id": 2,
     "descuento": "",
     "descripcion": "En sus inicios en 1997, el diseño de las Air Max 97 atrajo tanto a admiradores como a críticos. ​ De hecho, las Air Max 97 pasaron menos de un año en los estantes de las tiendas, aunque fueron muy populares en Italia y Serbia. En su lanzamiento en 1997, las Air Max 97 se vendían al por menor a 150 dólares."
   },
@@ -22,7 +22,7 @@
     "foto": "/images/adidas-running.jpg",
     "precio": "$9.000",
     "categoria": "mejores-productos",
-    "id": "3",
+    "id": 3,
     "descuento": "",
     "descripcion": "Las zapatillas adidas Coreracer ofrecen la combinación perfecta de sujeción para running y estilo urbano. Son livianas y transpirables para mantener tus pies cómodos en todo momento. Lucen un logo adidas Badge of Sport que le pone el toque final al look de alto rendimiento."
   },
@@ -31,7 +31,7 @@
     "foto": "/images/adidas-ozweego.jpg",
     "precio": "$11.000",
     "categoria": "mejores-productos",
-    "id": "4",
+    "id": 4,
     "descuento": "",
     "descripcion": "El estilo de los 90 fue solo el comienzo. Estas zapatillas OZWEEGO logran algo nuevo inspirándose en los diseños retro de adidas. Su exterior tipo media envuelve los pies en comodidad y suavidad. Los detalles tubulares en el talón le ponen un auténtico toque retro-tech al look."
   },
@@ -40,7 +40,7 @@
     "foto": "/images/zapatillas-nike-air-max-se.jpg",
     "precio": "$18.500",
     "categoria": "mas-comprado",
-    "id": "5",
+    "id": 5,
     "descuento": "",
     "descripcion": "Nada tan ligero, tan cómodo ni tan probado como el Nike Air Max SE, que se mantiene fiel a sus raíces originales y a la vez da un novedoso paso hacia la sustentabilidad. La icónica suela tipo wafle ahora cuenta con corcho reciclado, los revestimientos cosidos usan lona 100% reciclada y el gráfico de planta bordado en la lengüeta celebra a la planta presentada en el diseño.\r\n"
   },
@@ -49,7 +49,7 @@
     "foto": "/images/nike-dunk-low.jpg",
     "precio": "$14.800",
     "categoria": "mas-comprado",
-    "id": "6",
+    "id": 6,
     "descuento": "",
     "descripcion": "Entre las principales características de las Nike Dunk Low destaca su gran soporte, suspensión y niveles de adherencia al suelo o soporte (skate), estas mismas características las llevó a convertirse en una de las sneakers más codiciadas de Nike SB, convirtiéndose en un símbolo del skateboarding."
   },
@@ -58,7 +58,7 @@
     "foto": "/images/puma-mirage-tech.jpg",
     "precio": "$10.000",
     "categoria": "mas-comprado",
-    "id": "7",
+    "id": 7,
     "descuento": "",
     "descripcion": "Las zapatillas Puma Mirage Tech están confeccionadas en su exterior con una construcción de mallas y materiales sintéticos para una mayor comodidad, frescura y durabilidad. La suela de goma y espuma con EVA ofrecen pisadas extra suaves y tracción sobre cualquier superficie."
   },
@@ -67,7 +67,7 @@
     "foto": "/images/adidas-superstar-bold.jpg",
     "precio": "$12.000",
     "categoria": "mas-comprado",
-    "id": "8",
+    "id": 8,
     "descuento": "",
     "descripcion": "El superstar es una zapatilla deportiva de baloncesto estilo low-top fabricado desde 1969 por la compañía de artículos deportivos Adidas. La zapatilla Superstar originalmente fue lanzada como una versión low-top del tenis de baloncesto Pro Model."
   },
@@ -78,7 +78,7 @@
     "categoria": "mejores-ofertas",
     "precioTachado": "$35.000",
     "descuento": "30% OFF",
-    "id": "9",
+    "id": 9,
     "descripcion": "El Nike Air VaporMax 2021 FK es amplio y fácil de poner, ya que cuenta con una tela Flyknit reciclada y superelástica.\r\nAdemás de un cuello suave que moldea el tobillo.\r\nLas costuras del logotipo Swoosh y el clip de TPU reciclado del talón añaden el toque perfecto.\r\nPara recorrer las calles con una amortiguación VaporMax increíblemente suave.\r\nLa unidad Air VaporMax 2 se diseñó originalmente para el running de alto rendimiento."
   },
   {
@@ -88,7 +88,7 @@
     "categoria": "mejores-ofertas",
     "precioTachado": "$18.300",
     "descuento": "20% OFF",
-    "id": "10",
+    "id": 10,
     "descripcion": "Nike Air Force 1 Shadow es una silueta exclusiva para mujeres con un diseño basado en la superposición de capas que crean una sensación de doble visión. El diseño de las zapatillas incorpora como principal novedad un swoosh duplicado, el doble de altura y el doble de fuerza."
   },
   {
@@ -98,7 +98,7 @@
     "categoria": "mejores-ofertas",
     "precioTachado": "$17.000",
     "descuento": "15% OFF",
-    "id": "11",
+    "id": 11,
     "descripcion": "\r\nEn sus inicios en 1997, el diseño de las Air Max 97 atrajo tanto a admiradores como a críticos. ​ De hecho, las Air Max 97 pasaron menos de un año en los estantes de las tiendas, aunque fueron muy populares en Italia y Serbia. En su lanzamiento en 1997, las Air Max 97 se vendían al por menor a 150 dólares.\r\n\r\n"
   },
   {
@@ -108,7 +108,7 @@
     "categoria": "mejores-ofertas",
     "precioTachado": "$13.500",
     "descuento": "18% OFF",
-    "id": "12",
+    "id": 12,
     "descripcion": "Con su silueta dinámica y detalles de colores vivos, las Wild Rider Rollin' te transportarán a una nueva temporada de estilo urbano. Inspiradas en la cultura juvenil, estas zapatillas de última generación combinan el estilo atlético con elementos innovadores, logrando un look cargado de energía."
   }
 ]

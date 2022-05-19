@@ -924,3 +924,31 @@ textarea.input-creacion-productos{
     width: 150px;
     height: 60px;
 }
+input#imagenProducto {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+/*------------------------------- Formulario eliminación productos -------------------------------*/
+.div-eliminacion-productos{
+    width: 500px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+.boton-eliminacion-productos{
+    text-align: center;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    width: 150px;
+    height: 60px;
+}
+.formulario-eliminacion-productos{
+    text-align: center;
+}
+.articulo-eliminacion-productos img{
+    width: 70%;
+}

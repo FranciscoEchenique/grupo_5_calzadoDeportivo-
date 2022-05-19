@@ -11,6 +11,7 @@ const crear = (req, res) => {
 const almacenar = (req, res) => {
     const id = productos.length + 1;
     const nombre = req.body.nombre;
+    const foto = '/images/' + req.file.filename;
     const precio = req.body.precio;
     const descuento = req.body.descuento;
     const categoria = req.body.categoria;
@@ -18,6 +19,7 @@ const almacenar = (req, res) => {
 
     productos.push({
         id,
+        foto,
         nombre,
         precio,
         descuento,
@@ -63,11 +65,34 @@ const actualizar = (req, res) => {
     res.redirect('/')
 }
 
+const mostrarEliminar = (req, res) => {
+    const id = req.params.iDproducto;
+
+    const productoAEliminar = productos.find((element) =>{
+        return element.id == id
+    });
+    
+    res.render('formulario-eliminar', {productoAEliminar});
+}
+
+const eliminar = (req, res) => {
+    const id = parseInt(req.params.iDproducto);
+    const productosFinales = productos.filter((elemento) => 
+        elemento.id !== id
+    )
+    const productosFinalesString = JSON.stringify(productosFinales, null, 2);
+    fs.writeFileSync(productos_path, productosFinalesString);
+    
+    res.redirect('/')
+}
+
 const productoController = {
     crear,
     almacenar,
     editar,
-    actualizar
+    actualizar,
+    eliminar,
+    mostrarEliminar
 }
 
 module.exports = productoController;

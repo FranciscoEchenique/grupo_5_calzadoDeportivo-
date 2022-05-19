@@ -26,7 +26,6 @@ const almacenar = (req, res) => {
         categoria,
         descripcion
     })
-
     const nuevoProductoString = JSON.stringify(productos, null, 2);
     fs.writeFileSync(productos_path, nuevoProductoString);
     res.redirect('/detalle-de-producto/' + req.body.categoria + '/' + id);
@@ -77,11 +76,10 @@ const mostrarEliminar = (req, res) => {
 }
 
 const eliminar = (req, res) => {
-    
-    const productosFinales = productos.filter((elemento) => {
-        elemento.id != req.params.iDproducto
-    })
-
+    const id = parseInt(req.params.iDproducto);
+    const productosFinales = productos.filter((elemento) => 
+        elemento.id !== id
+    )
     const productosFinalesString = JSON.stringify(productosFinales, null, 2);
     fs.writeFileSync(productos_path, productosFinalesString);
     

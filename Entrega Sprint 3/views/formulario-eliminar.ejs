@@ -16,8 +16,22 @@
     <%- include('./partials/header') %>
     <main>
         <h2 class="titulo-creacion-productos">Elimina un producto</h2>
-        <form class="formulario-creacion-productos" action="/productos/eliminar/<%= productoAEliminar.id %>?_method=DELETE" method="POST">
+        <div class="div-eliminacion-productos">
+        <article class="articulo-eliminacion-productos">
+           <img src=<%= productoAEliminar.foto %>
+            <div>
+                <p>
+                    <%= productoAEliminar.nombre %>
+                </p>
+                <h4>
+                    <%= productoAEliminar.precio %>
+                </h4>
+            </div>
+        </article>
+        <form  class="formulario-eliminacion-productos" action="/productos/eliminar/<%= productoAEliminar.id %>?_method=DELETE" method="POST">
+            <button class="boton-eliminacion-productos" type="submit">ELIMINAR</button>
         </form>
+        </div>
     </main>
     <%- include('./partials/footer') %>
 </body>

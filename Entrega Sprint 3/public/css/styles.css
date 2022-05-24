@@ -441,6 +441,15 @@ div .logo{
     font-size: 14px;
     font-weight: bold;
 }
+.text-danger{
+    color: red;
+    margin: -15px 0px 5px 0;
+    font-size: 14px;
+}
+.label-registro{
+    font-size: 13px;
+    font-weight: bolder;
+}
 
 /*DETALLE DE PRODUCTO*/
 
@@ -951,4 +960,16 @@ input#imagenProducto {
 }
 .articulo-eliminacion-productos img{
     width: 70%;
+}
+/*------------------------------- Vista de usuarios -------------------------------*/
+.articulo-usuario h2 {
+    margin-top: 90px;
+    text-align: center;
+}
+.imagen-usuario{
+    margin-top: 10px;
+    text-align: center;
+}
+.imagen-usuario img{
+    box-shadow: 0 0 10px rgb(100 100 100);
 }

@@ -16,13 +16,9 @@ const almacenarUsuario = (req, res) => {
     const email = req.body.email;
     const contraseña = req.body.password;
     
-    let errorImagen = '';
     if (req.file !== undefined){
         var imagenValidada = req.file.filename
-    } else {
-        errorImagen = 'Por favor envía una imagen'
-    }
-    
+    } 
     const imagen = '/images/fotosUsuarios/' + imagenValidada; 
 
     usuarios.push({
@@ -40,10 +36,10 @@ const almacenarUsuario = (req, res) => {
     const errors = validationResult(req)
 
     if (errors.errors.length > 0){
-        res.render('register', {errors: errors.mapped(), old: req.body, errorImagen})
+        res.render('register', {errors: errors.mapped(), old: req.body})
+    } else{
+        res.redirect('/login')
     }
-
-    res.redirect('/login')
 }
 
 const registerController = {

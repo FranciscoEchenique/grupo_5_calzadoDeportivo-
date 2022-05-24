@@ -88,53 +88,5 @@
     "contraseña": "yaM8QOx",
     "categoria": "nulla ac",
     "imagen": "https://robohash.org/idcorruptiofficia.png?size=50x50&set=set1"
-  },
-  {
-    "id": 11,
-    "nombre": "",
-    "apellido": "",
-    "email": "",
-    "contraseña": "",
-    "imagen": "/images/fotosUsuarios/undefined"
-  },
-  {
-    "id": 12,
-    "nombre": "",
-    "apellido": "",
-    "email": "",
-    "contraseña": "",
-    "imagen": "/images/fotosUsuarios/1653342347461.jpg"
-  },
-  {
-    "id": 13,
-    "nombre": "",
-    "apellido": "",
-    "email": "",
-    "contraseña": "",
-    "imagen": "/images/fotosUsuarios/1653342702246.jpg"
-  },
-  {
-    "id": 14,
-    "nombre": "",
-    "apellido": "",
-    "email": "",
-    "contraseña": "",
-    "imagen": "/images/fotosUsuarios/undefined"
-  },
-  {
-    "id": 15,
-    "nombre": "",
-    "apellido": "",
-    "email": "",
-    "contraseña": "",
-    "imagen": "/images/fotosUsuarios/undefined"
-  },
-  {
-    "id": 16,
-    "nombre": "Francisco",
-    "apellido": "Echenique",
-    "email": "echeniquefrancisco127@gmail.com",
-    "contraseña": "",
-    "imagen": "/images/fotosUsuarios/undefined"
   }
 ]

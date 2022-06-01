@@ -388,6 +388,13 @@ div .logo{
     color: #00468b;
     padding-left: 4px;
 }
+.text-danger-login{
+    color: red;
+    margin: -10px 0px 5px 0;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: underline;
+}
 
 /*REGISTER*/
 /*REGISTER*/
@@ -972,4 +979,22 @@ input#imagenProducto {
 }
 .imagen-usuario img{
     box-shadow: 0 0 10px rgb(100 100 100);
+    border-radius: 500px;
+    width: 150px;
+    height: 150px;
+}
+.div-usuario{
+    background-color: rgba(0,255,0,0.5);
+    width: 300px;
+    height: 50px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-usuario{
+    margin-bottom: 100px;
+    margin-top: 180px;
 }

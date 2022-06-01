@@ -4,6 +4,7 @@ const registerController = require('../controllers/registerController.js');
 const path = require('path');
 const multer = require('multer');
 const validateRegister = require('../middlewares/validaciones.js');
+const usuarioMiddleware = require('../middlewares/usuarioMiddleware.js')
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb){
@@ -16,9 +17,9 @@ const storage = multer.diskStorage({
     }
 });
 
-const fileUpload = multer({storage})
+const fileUpload = multer({storage});
 
-router.get('/', registerController.register);
+router.get('/', usuarioMiddleware, registerController.register);
 router.post('/', fileUpload.single('imagenUsuario'), validateRegister, registerController.almacenarUsuario);
 
 module.exports = router;

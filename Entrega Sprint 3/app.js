@@ -22,7 +22,11 @@ app.use(methodOverride('_method'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static('public'));
-app.use(session({secret: "Mensaje secreto"}));
+app.use(session({
+    secret: "Mensaje secreto",
+    resave: false,
+    saveUninitialized: false
+}));
 /*------------------------------- Middlewares -------------------------------*/
 
 /*------------------------------- Motor de vistas -------------------------------*/

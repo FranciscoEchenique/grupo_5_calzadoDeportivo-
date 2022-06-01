@@ -16,15 +16,24 @@
         <main class="main-login">
             <div class="logo-login"><img class="bordelogo" src="images/logo-de-sportshoes.png" alt="logo de sportshoes" width="150"></div>        </header>
         <section class="primera-seccion-login">
-            <form action="/login" method="post">
-              <div class="formu"><label class="espacio1" for="usuario">Usuario</label>
-                <input  type="text" name="usuario" id="usuario"></div>
-                <div class="formu"><label class="espacio2" for="clave">Contraseña</label>
-                    <input type="password" name="clave" id="clave">
+            <form action="/login" method="POST">
+              <div class="formu"><label class="espacio1" for="email">Email</label>
+                <input  type="text" name="email" id="usuario" value="<%= locals.old ? locals.old.email : null %>"></div>
+                <% if (locals.errors && errors.email) { %>
+                    <div class="text-danger-login">
+                        <%= errors.email.msg %>   
+                    </div> 
+                <% } %>
+                <div class="formu"><label class="espacio2" for="password">Contraseña</label>
+                    <input type="password" name="password" id="clave">
                 </div> 
+                <% if (locals.errors && errors.logueado) { %>
+                    <div class="text-danger-login">
+                        <%= errors.logueado.msg %>   
+                    </div> 
+                <% } %>
+                <div class="centrar"><button class="contenedor" type="submit">Iniciar sesión</button></div>
             </form>
-            <div class="centrar"><button class="contenedor">Iniciar sesión</button></div>
-
             <div class="check"><input class="inputlog" type="checkbox" name="sesion abierta" value="hola">
             <label for=""> Mantener  la sesión abierta</label>
             <a class="color" href="#">Olvidaste tu contraseña?</a></div>

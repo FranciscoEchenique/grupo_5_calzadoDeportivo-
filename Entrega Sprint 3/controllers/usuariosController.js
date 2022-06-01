@@ -6,13 +6,7 @@ const leerUsuarios = fs.readFileSync(usuarios_path, 'utf-8');
 const usuarios = JSON.parse(leerUsuarios);
 
 const index = (req, res) => {
-    const id = req.params.iDusuario;
-
-     const usuarioFinal = usuarios.find((element) => {
-        return element.id == id
-     })
-
-    res.render('usuarios', {usuarioFinal})
+    res.render('usuarios', {usuarioFinal: req.session.userLogged})
 };
 
 const usuariosController = {

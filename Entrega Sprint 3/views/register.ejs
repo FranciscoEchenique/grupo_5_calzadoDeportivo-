@@ -62,6 +62,11 @@ Enviar mensaje a #general
         <div>
             <label for="imagenUsuario" class="label-registro">Cargue su avatar</label>
             <input type="file" name="imagenUsuario" id="imagenUsuario" class="botones">
+            <% if (locals.errors && errors.imagenUsuario) { %>
+                <div class="text-danger">
+                    <%= errors.imagenUsuario.msg %>   
+                </div> 
+            <% } %>
         </div>
         <input type="checkbox" name="terminos">
         <label for="terminos">Acepto <a href="#">Términos y Condiciones.</a></label>

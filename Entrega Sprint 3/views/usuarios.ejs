@@ -15,11 +15,16 @@
 <body>
     <%- include('./partials/header') %>
     <main>
-        <section>
+        <section class="section-usuario">
             <article class="articulo-usuario">
                 <h2>Bienvenido/a a tu perfil <%= usuarioFinal.nombre %> </h2>
                 <div class="imagen-usuario">
                     <img src="<%= usuarioFinal.imagen %>" alt="Foto de <%= usuarioFinal.nombre %>">
+                </div>
+                <div class="div-usuario">
+                    <h4>
+                        <%= usuarioFinal.email %>
+                    </h4>
                 </div>
             </article>
         </section>

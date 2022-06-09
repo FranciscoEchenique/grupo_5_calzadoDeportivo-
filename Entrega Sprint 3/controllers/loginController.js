@@ -21,11 +21,10 @@ const procesoLogin = (req, res) => {
                 msg: 'Este email no está registrado'
             }
         }});
-    } else {
+    } else {    
     let usuarioLogueadoContraseña = bcrypts.compareSync(req.body.password, usuarioLogueado.password);
         if(usuarioLogueadoContraseña){
-            delete usuarioLogueado.password
-            req.session.userLogged = usuarioLogueado;
+            req.session.userLogged = {email: usuarioLogueado.email, nombre: usuarioLogueado.nombre, imagen: usuarioLogueado.imagen, rol: usuarioLogueado.rol};
             return res.redirect('/usuarios');
         }
         return res.render('login', {errors: {

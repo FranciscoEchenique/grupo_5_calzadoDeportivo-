@@ -571,6 +571,33 @@ div .logo{
     margin-top: 10px;
     width: 30%;
 }
+.formulario-botones-detalle {
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+}
+.boton-eliminar-detalle{
+    text-align: center;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    width: 150px;
+    height: 60px;
+    margin: 5px;
+}
+.boton-editar-detalle{
+    text-align: center;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #39b54a;
+    color: white;
+    width: 150px;
+    height: 60px;
+    margin: 5px;
+}
 
 /*------------------------------- Carrito -------------------------------*/
 
@@ -997,4 +1024,14 @@ input#imagenProducto {
 .section-usuario{
     margin-bottom: 100px;
     margin-top: 180px;
+}
+.boton-creacion-usuarios{
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    width: 150px;
+    height: 40px;
+    margin-top: 10px;
 }

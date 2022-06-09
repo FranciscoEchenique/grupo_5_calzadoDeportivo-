@@ -5,22 +5,15 @@
     "apellido": "Echenique",
     "email": "echeniquefrancisco127@gmail.com",
     "password": "$2a$10$YzzQMX2gL9pn203IiigKDuLpLgu3WO./jk2yTtstcNvj7xYoG4d7.",
-    "imagen": "/images/fotosUsuarios/1653882963098.jpg"
+    "imagen": "/images/fotosUsuarios/1653882963098.jpg",
+    "rol": "admin"
   },
   {
     "id": 2,
-    "nombre": "Eugenia",
-    "apellido": "Fernandez",
-    "email": "eugeniafernandez@hotmail.com",
-    "password": "$2a$10$D0.qiHmrChj5exJ4v9PmSelJnzUn7ECd3hEbzqqG6x.rKApmmOeKK",
-    "imagen": "/images/fotosUsuarios/1653957871911.jpg"
-  },
-  {
-    "id": 3,
-    "nombre": "Kennie",
-    "apellido": "Jhonson ",
-    "email": "kennie@gmail.com",
-    "password": "$2a$10$GCO.gIYFOKreBV5rFxHNQOv9xbaCN3nSHOe5888Z.cz3twdZok3Oq",
-    "imagen": "/images/fotosUsuarios/1653966708581.png"
+    "nombre": "Galo",
+    "apellido": "Tots",
+    "email": "galotots@gmail.com",
+    "password": "$2a$10$hfr1nWHW/uIYETlfib9qleAUc1shrvTOWquuvWGf6vzn.v2APc/1e",
+    "imagen": "/images/fotosUsuarios/1654730267396.png"
   }
 ]

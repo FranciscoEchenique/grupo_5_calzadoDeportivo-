@@ -30,6 +30,12 @@
                         <p class='oferta-detail'><%= producto.descuento %></p>
                         <button type="button" class="agregar-detail">Agregar al carrito</button>
                         <br>
+                        <% if (userLogged && userLogged.rol) { %>
+                            <div  class="formulario-botones-detalle">
+                                <a href="/productos/editar/<%= producto.id %>"><button class="boton-editar-detalle">EDITAR</button></a>
+                                <a href="/productos/eliminar/<%= producto.id %>"><button class="boton-eliminar-detalle">ELIMINAR</button></a>
+                            </div>
+                        <% } %>
                     </article>
                     <article class='descripcion-detail articles'>
                         <br>

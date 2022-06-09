@@ -1,3 +1,4 @@
+const { Store } = require('express-session');
 const fs = require('fs');
 const path = require('path');
 
@@ -9,8 +10,16 @@ const index = (req, res) => {
     res.render('usuarios', {usuarioFinal: req.session.userLogged})
 };
 
+const eliminar = (req, res) => {
+    if (req.session.userLogged){
+        req.session.userLogged = undefined
+        res.redirect('/login')
+    }
+};
+
 const usuariosController = {
-    index
+    index,
+    eliminar
 };
 
 module.exports = usuariosController;

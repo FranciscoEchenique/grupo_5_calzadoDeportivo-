@@ -14,30 +14,36 @@ const mejoresOfertas = productos.filter(function(elemento){ return elemento.cate
 const mejoresOfertasRuta = (req, res) => {
     const id = req.params.iDproducto;
 
+    const userLogged = req.session.userLogged;
+
     const productoMejoresOferas =  mejoresOfertas.find((element) =>{
         return element.id == id
     });
     
-    res.render('detalle-de-producto', {producto: productoMejoresOferas});
+    res.render('detalle-de-producto', {producto: productoMejoresOferas, userLogged});
 };
 
 const masCompradoRuta = (req, res) => {
     const id = req.params.iDproducto;
 
+    const userLogged = req.session.userLogged;
+
     const productoMasComprado = masComprado.find((element) =>{
         return element.id == id
     });
     
-    res.render('detalle-de-producto', {producto: productoMasComprado});
+    res.render('detalle-de-producto', {producto: productoMasComprado, userLogged});
 };
 
 const mejoresProductosRuta = (req, res) => {
     const id = req.params.iDproducto;
 
+    const userLogged = req.session.userLogged;
+
     const mejorProducto = mejoresProductos.find((element) =>{
         return element.id == id
     });
-    res.render('detalle-de-producto', {producto: mejorProducto});
+    res.render('detalle-de-producto', {producto: mejorProducto, userLogged});
 };
 
 const detalleController = {

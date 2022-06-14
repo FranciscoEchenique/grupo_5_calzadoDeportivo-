@@ -21,6 +21,7 @@
    */
   
   body {
+   
     margin: 0;
   }
   
@@ -29,7 +30,8 @@
    */
   
   main {
-    display: block;
+    display: flex;
+    
   }
   
   /**

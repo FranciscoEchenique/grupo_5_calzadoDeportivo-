@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
     <script src="https://kit.fontawesome.com/8cc76fc728.js" crossorigin="anonymous"></script>
+    <script src="../slider.js"></script> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
@@ -16,9 +17,34 @@
 <body>
    <%- include('./partials/header') %>
     <main>
-        <div class="foto-modelo-home">
-            <img src="images/foto-modelo-editada-1.jpg" alt="Foto Modelo 1">
+        <div class="container-slider">
+
+            <div class="slider" id="slider">
+
+            <div class="slider__section">
+                <img src="images/c1.jpg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="images/c2.jpg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="images/c3.jpg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="images/c4.jpg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="images/c5.jpg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="images/c7.jpg" alt="" class="slider__img">
+            </div>
         </div>
+        <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+        <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div> 
+                
+        </div>
+       
         <section class="seccion-mejores-productos-home">
             <h3 class="titulo-secciones-home">NUESTROS MEJORES PRODUCTOS</h3>
             <div class="barra-naranja"></div>
@@ -86,6 +112,7 @@
         </section>
         <%- include('./partials/footer') %>
     </main>
+
 </body>
 
 </html>

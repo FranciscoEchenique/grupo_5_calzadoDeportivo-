@@ -7,13 +7,5 @@
     "password": "$2a$10$YzzQMX2gL9pn203IiigKDuLpLgu3WO./jk2yTtstcNvj7xYoG4d7.",
     "imagen": "/images/fotosUsuarios/1653882963098.jpg",
     "rol": "admin"
-  },
-  {
-    "id": 2,
-    "nombre": "Galo",
-    "apellido": "Tots",
-    "email": "galotots@gmail.com",
-    "password": "$2a$10$hfr1nWHW/uIYETlfib9qleAUc1shrvTOWquuvWGf6vzn.v2APc/1e",
-    "imagen": "/images/fotosUsuarios/1654730267396.png"
   }
 ]

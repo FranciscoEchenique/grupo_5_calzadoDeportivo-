@@ -15,5 +15,5 @@ let config = {
     timestamps: false,
 }
 
-const Producto = sequelize.define(alias,cols,config);
-module.exports = Producto;
+const Usuario = sequelize.define(alias,cols,config);
+module.exports = Usuario;

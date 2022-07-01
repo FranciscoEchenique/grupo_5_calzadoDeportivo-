@@ -1,6 +1,6 @@
 const sequelize = require('sequelize');
 const sequelize = require('../database'); 
-let alias = "productos"
+let alias = "Productos"
 let cols = {
     nombre: {type : DataTypes.STRING(20)},
     foto:{type : DataTypes.DATA} ,
@@ -11,8 +11,9 @@ let cols = {
     descripcion:{type : DataTypes.STRING(200)},
 };
 let config = {
-    tableName: "productos",
+    tableName: "Productos",
     timestamps: false,
+
 }
 
 const Producto = sequelize.define(alias,cols,config);

@@ -11,7 +11,8 @@
     --Celeste: #219ebc;
 }
 body{
-    margin: 0;
+
+
     /*font-family: 'Roboto', sans-serif;*/
     font-family: 'Noto Sans';
 }
@@ -22,7 +23,7 @@ header{
     z-index: 100;
 }
 .seccion-mejores-productos-home{
-    margin-top: 10px;
+    margin-top: 100px;
 }
 .contenedor-flex-header{
     display: flex;
@@ -1034,4 +1035,59 @@ input#imagenProducto {
     width: 150px;
     height: 40px;
     margin-top: 10px;
+}
+/*css slider */
+.container-slider{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+
+
+}
+.slider{
+    display: flex;
+    width: 600%;
+    height: 400%;
+    margin-left: -100%;
+ 
+
+}
+.slider__section{
+    width: 100%;
+
+}
+.slider__img{
+    margin-top: 100px;
+    margin-bottom: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.slider__btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.7);
+    top: 65%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.slider__btn:hover{
+    background: #fff;
+
+}
+.slider__btn--left{
+ left: 10px;
+}
+.slider__btn--right{
+    right: 10px;
+
 }

@@ -2,13 +2,13 @@ const sequelize = require('sequelize');
 const sequelize = require('../database'); 
 let alias = "Usuarios"
 let cols = {
-    id_usuario: {type : DataTypes.INCREMENT},
-    nombre:{type : DataTypes.STRING(100)} ,
-    apellido: {type : DataTypes.STRING(100)},
-    email:{type : DataTypes.STRING(100)}, 
-    password:{type : DataTypes.STRING(100)},
-    imagen: {type : DataTypes.STRING(100)},
-    rol:{type : DataTypes.STRING(20)},
+	id_usuarioINT:  sequelize.DataTypes.NOT(null),
+    nombre: sequelize.DataTypes.VARCHAR(100), 
+    apellido: sequelize.DataTypes.VARCHAR(100),
+    email: sequelize.DataTypes.VARCHAR(100),
+    password:sequelize.DataTypes.VARCHAR(100),
+    imagen:sequelize.DataTypes.VARCHAR(100),
+    rol:sequelize.DataTypes.VARCHAR(15),
 };
 let config = {
     tableName: "Usuarios",
@@ -16,4 +16,14 @@ let config = {
 }
 
 const Usuario = sequelize.define(alias,cols,config);
+Usuario.associate = function(models){
+    Usuario.belongsToMany(models.Productos,{
+       as: "compra",
+       through: "zapatillas_usuarios",
+        foreignKey: "id_usuario",
+        otherKey: "id_zapatilla",
+        timestamps: false
+    })
+    
+}
 module.exports = Usuario;

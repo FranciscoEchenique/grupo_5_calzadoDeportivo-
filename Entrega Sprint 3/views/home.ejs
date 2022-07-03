@@ -21,34 +21,33 @@
 
             <div class="slider" id="slider">
 
-            <div class="slider__section">
-                <img src="images/c1.jpg" alt="" class="slider__img">
+                <div class="slider__section1">
+                   <img src="images/c1.jpg" alt="" class="slider__img">
+                </div>
+                <div class="slider__section">
+                  <img src="images/c2.jpg" alt="" class="slider__img">
+                </div>
+                <div class="slider__section">
+                  <img src="images/c3.jpg" alt="" class="slider__img">
+                </div>
+                <div class="slider__section">
+                  <img src="images/c4.jpg" alt="" class="slider__img">
+                </div>
+                <div class="slider__section">
+                  <img src="images/c5.jpg" alt="" class="slider__img">
+                </div>
+                <div class="slider__section">
+                  <img src="images/c7.jpg" alt="" class="slider__img">
+                </div>
+            </div>            
+            <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+            <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>        
             </div>
-            <div class="slider__section">
-                <img src="images/c2.jpg" alt="" class="slider__img">
-            </div>
-            <div class="slider__section">
-                <img src="images/c3.jpg" alt="" class="slider__img">
-            </div>
-            <div class="slider__section">
-                <img src="images/c4.jpg" alt="" class="slider__img">
-            </div>
-            <div class="slider__section">
-                <img src="images/c5.jpg" alt="" class="slider__img">
-            </div>
-            <div class="slider__section">
-                <img src="images/c7.jpg" alt="" class="slider__img">
-            </div>
-            <script src="/js/slider.js">
-
-            </script>
+            
         </div>
-        <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
-        <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div> 
-                
-        </div>
-       <script src="/"></script>
-        <section class="seccion-mejores-productos-home">
+        <script src="/js/slider.js"></script>
+        <div>
+         <section class="seccion-mejores-productos-home">
             <h3 class="titulo-secciones-home">NUESTROS MEJORES PRODUCTOS</h3>
             <div class="barra-naranja"></div>
             <div class="articulos-home">
@@ -66,13 +65,14 @@
                 </article>
                 <% } %>
             </div>
-        </section>
+         </div>    
+     </section>
         <section class="seccion-mejores-productos-home">
             <h3 class="titulo-secciones-home">LO MÁS COMPRADO DEL SITIO</h3>
             <div class="barra-naranja"></div>
             <div class="articulos-home">
                 <% for (let i = 0; i < masComprado.length; i++) { %>
-            <article class="articulos-mejores-productos-home">
+             <article class="articulos-mejores-productos-home">
                 <a href="/detalle-de-producto/mas-comprado/<%= masComprado[i].id %>"><img src=<%= masComprado[i].foto %>  alt=<%= masComprado[i].nombre %>></a>
                 <div class="articulo-mejores-productos-home">
                     <p class="titulo-mejor-producto-home">
@@ -85,32 +85,32 @@
             </article>
             <% } %>
             </div>  
-        </section>
-        <section class="seccion-mejores-productos-home">
+         </section>
+         <section class="seccion-mejores-productos-home">
             <h3 class="titulo-secciones-home">NUESTRAS MEJORES OFERTAS</h3>
             <div class="barra-naranja"></div>
             <div class="articulos-home">
                 <% for (let i = 0; i < mejoresOfertas.length; i++) { %>
-            <article class="articulos-mejores-productos-home">
-                <div class="contenedor-precio-tachado">
-                <a href="/detalle-de-producto/mejores-ofertas/<%= mejoresOfertas[i].id %>"><img src=<%= mejoresOfertas[i].foto %> alt=<%= mejoresOfertas[i].nombre %>></a>
-                <p class="precio-tachado-puma-wild-rollin"><%= mejoresOfertas[i].precioTachado %></p>
-                </div>
-                <div class="articulo-mejores-productos-home">   
-                    <p class="titulo-mejor-producto-home">
+                 <article class="articulos-mejores-productos-home">
+                  <div class="contenedor-precio-tachado">
+                   <a href="/detalle-de-producto/mejores-ofertas/<%= mejoresOfertas[i].id %>"><img src=<%= mejoresOfertas[i].foto %> alt=<%= mejoresOfertas[i].nombre %>></a>
+                    <p class="precio-tachado-puma-wild-rollin"><%= mejoresOfertas[i].precioTachado %></p>
+                   </div>
+                    <div class="articulo-mejores-productos-home">   
+                     <p class="titulo-mejor-producto-home">
                         <%= mejoresOfertas[i].nombre %>
-                    </p>
-                    <div class="contenedor-precio-descuento-home">
-                    <h4 class="precio-mejor-producto-home">
+                     </p>
+                     <div class="contenedor-precio-descuento-home">
+                     <h4 class="precio-mejor-producto-home">
                         <%= mejoresOfertas[i].precio %>
-                    </h4>
-                    <p class="descuento-home">
+                     </h4>
+                     <p class="descuento-home">
                         <%= mejoresOfertas[i].descuento %>
-                    </p>
-                </div> 
-                </div>
-            </article>
-            <% } %>
+                     </p>
+                    </div> 
+            
+                </article>
+                <% } %>
             </div>
         </section>
         <%- include('./partials/footer') %>

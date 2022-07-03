@@ -599,6 +599,20 @@ div .logo{
     height: 60px;
     margin: 5px;
 }
+.boton-crear{
+    text-align: center;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #238c31;
+    color: white;
+    width: 150px;
+    height: 60px;
+    margin: 5px;
+
+
+
+}
 
 /*------------------------------- Carrito -------------------------------*/
 

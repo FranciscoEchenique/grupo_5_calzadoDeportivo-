@@ -18,9 +18,9 @@ Modelo.associate = function(models){
     Producto.belongsToMany(models.Usuario,{
        as: "modelo_zapatilla",
        through: "zapatillas_usuarios",
-        foreignKey:"id_zapatilla" ,
-        otherKey:"id_modelos" ,
-        timestamps: false
+       foreignKey:"id_zapatilla" ,
+       otherKey:"id_modelos" ,
+       timestamps: false
     })
     
 }

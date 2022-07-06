@@ -1,0 +1,56 @@
+/*css slider */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+.imagen{
+    border-radius: 5%;
+    margin-top: 80px ;
+    margin-left: 12.5%;
+    width: auto;
+    height: auto;
+}
+
+.contenedorSlider{
+    background-color: null;   
+    margin-top: 80px;
+    width: auto;
+    position: relative;
+    height: 780px;
+    
+
+
+}
+.botones{
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    position:absolute;
+    color: rgb(24, 40, 54);
+    box-shadow: 0 0 10px rgba(12, 198, 148, 0.6);
+    transition: all .3s ease;
+}
+
+.botones:hover{
+    
+    cursor: pointer;
+    transform: scale(1.2,1.2);
+
+}
+
+
+.atras{
+ left: 2%;
+ top: calc(50% - 70px);
+}
+.adelante{
+    right: 2%;
+    top: calc(50% - 70px)
+
+}

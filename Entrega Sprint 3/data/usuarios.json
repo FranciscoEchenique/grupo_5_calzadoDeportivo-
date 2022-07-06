@@ -7,5 +7,14 @@
     "password": "$2a$10$YzzQMX2gL9pn203IiigKDuLpLgu3WO./jk2yTtstcNvj7xYoG4d7.",
     "imagen": "/images/fotosUsuarios/1653882963098.jpg",
     "rol": "admin"
+  },
+  {
+    "id": 3,
+    "nombre": "Paolo",
+    "apellido": "Botto",
+    "email": "paolobotto1981@gmail.com",
+    "password": "$2a$10$m0utTJv0zkC7wz5QhBVcC.e8woLD9JYoQ7srpd3/xOyaCAUnoW0ru",
+    "imagen": "/images/fotosUsuarios/1656803495099.jpg",
+    "rol": "admin"
   }
 ]

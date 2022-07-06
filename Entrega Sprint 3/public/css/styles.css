@@ -198,7 +198,7 @@ footer{
     justify-content: space-between;
     max-width: 1200px;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 .caja-footer{
     display: flex;
@@ -306,12 +306,22 @@ footer{
 /*LOGIN*/
 .main-login{
     margin-top: 90px;
+    justify-content: center;
+    background-color: #205375;
+    width: 500px;
+    height: 400px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    padding: 10px;
+    margin: auto;
 }
+
+
 .logo-login{
     text-align: center;
 }
-label, .color, .color2{
-    background-color: #ebebeb;
+label, .color, .color2, a.color, a.color2{
+    color: #ebebeb;
     
 }
 .bordelogo{
@@ -319,8 +329,10 @@ label, .color, .color2{
 }
     
     .login{
+        margin-top: 120px;    
         font-family: sans-serif;
-        background-color: white;    
+        background-color: white;
+         
         
     }
 
@@ -339,14 +351,23 @@ div .logo{
     display: flex;
     justify-content: center;
     padding: 10px;
+    padding-right: 69px;
 }
 .espacio1{
     padding: 2px;
-    padding-right: 30px;
+    padding-right: 45px;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #205375;
+    color: white;
 }
 .espacio2{
     padding: 2px;
     padding-right: 5px ;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #205375;
+    color: white;
 }
 
  .iniciar{
@@ -357,7 +378,7 @@ div .logo{
     
 }
 .contenedor{
-    background-color: #00468b;
+    background-color: #39b54a;
     color: white;
     font-size:large;
     padding: 5px;
@@ -367,7 +388,8 @@ div .logo{
 .centrar{
     display: flex;
     justify-content: center;
-    padding: 5px;
+    padding: 10px;
+    padding-right: 30px;
 }
 .check, .olvidaste{
     display: flex;

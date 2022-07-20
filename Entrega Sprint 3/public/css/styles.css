@@ -1072,3 +1072,12 @@ input#imagenProducto {
     height: 40px;
     margin-top: 10px;
 }
+
+.errores{
+    
+    text-align: center;
+    color: red;
+   background-color:white;
+   opacity: 60%;
+    
+}

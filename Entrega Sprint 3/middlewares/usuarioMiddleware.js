@@ -1,7 +1,8 @@
 function usuarioMiddleware(req, res, next){
     if (req.session.userLogged){
         return res.redirect('/usuarios');
-    } 
-    next();
-};
+    } else {
+        next();
+    }
+}
 module.exports = usuarioMiddleware;

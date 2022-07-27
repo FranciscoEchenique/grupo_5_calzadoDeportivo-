@@ -425,7 +425,7 @@ div .logo{
 
 .formulario-registro {
     width: 360px;
-    background: #ebebeb;
+    background: #205375;
     padding: 30px;
     margin: auto;
     margin-top: 105px;
@@ -435,6 +435,7 @@ div .logo{
 }
 
 .formulario-registro h3 {
+    color: #ebebeb;
     font-size: 22px;
     margin-bottom: 20px;
     text-align: center; 
@@ -477,8 +478,13 @@ div .logo{
     font-size: 14px;
 }
 .label-registro{
+    color: #ebebeb;
     font-size: 13px;
-    font-weight: bolder;
+    
+}
+.boton-registro{
+    color: #ebebeb;
+    background-color: #238c31;
 }
 
 /*DETALLE DE PRODUCTO*/
@@ -1071,4 +1077,13 @@ input#imagenProducto {
     width: 150px;
     height: 40px;
     margin-top: 10px;
+}
+
+.errores{
+    
+    text-align: center;
+    color: red;
+   background-color:white;
+   opacity: 60%;
+    
 }

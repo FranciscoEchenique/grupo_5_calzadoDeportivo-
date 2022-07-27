@@ -16,7 +16,7 @@
     <%- include('./partials/header') %>
     <main>
         <h2 class="titulo-creacion-productos">Formulario edición de productos</h2>
-        <form class="formulario-creacion-productos" action="/productos/editar/<%= productoPorEditar.id %>?_method=PUT" method="POST">
+        <form class="formulario-creacion-productos" action="/productos/editar/<%= productoPorEditar.id_zapatilla %>?_method=PUT" method="POST">
         <div class="contenedores-formulario-creacion">
             <label for="nombre" class="label-creacion-productos">Nombre del producto:</label>
             <input type="text" id="nombre" name="nombre" value="<%= productoPorEditar.nombre %>" class="input-creacion-productos">

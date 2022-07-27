@@ -2,6 +2,7 @@
 
 <head>
 
+<<<<<<< HEAD
         <link rel="stylesheet" href="/css/styles.css">
         <script src="https://kit.fontawesome.com/8cc76fc728.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -50,3 +51,53 @@
     <%- include('./partials/footer') %>
     
     </body>
+=======
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/8cc76fc728.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <title>Login SportShoes</title>
+</head>
+<body class="login">
+    <%- include('./partials/header') %>
+    <main class="main-login">
+        <div class="logo-login"><img class="bordelogo" src="images/logo-de-sportshoes.png" alt="logo de sportshoes" width="150"></div>        
+
+        <section class="primera-seccion-login">
+
+        <form class="formulario" action="/login" method="POST">
+          <div class="formu"><label class="espacio1" for="email">Email</label>
+            <input  type="text" name="email" id="usuario"value="<%= locals.old ? locals.old.email : null %>" ></div>
+            <% if (locals.errors && errors.email) { %>
+              <div class="text-danger-login">
+                  <%= errors.email.msg %>        
+              </div>  
+            <% } %>  
+            <div class="errores"></div>
+            <div class="formu"><label class="espacio2" for="password">Contraseña</label>
+                <input type="password" name="password" id="clave">
+            </div> 
+            <% if (locals.errors && errors.logueado) { %>
+              <div class="text-danger-login">
+                  <%= errors.logueado.msg %>   
+              </div> 
+            <% } %>
+            
+            <div class="centrar" id="submit"> <button class="contenedor" type="submit">Iniciar sesión</button></div>
+
+        </form>
+        <div class="check"><input class="inputlog" type="checkbox" name="sesion abierta" value="hola">
+        <label for=""> Mantener  la sesión abierta</label>
+        <a class="color" href="#">Olvidaste tu contraseña?</a></div>
+        <div class="nosos">No sos miembro?<a class="color2" href="/register">Unite</a></div>
+            
+      </section>
+      <script src="./js/login.js"></script>
+    
+
+    </main>        
+    <%- include('./partials/footer') %>
+
+</body>
+>>>>>>> 466a555d5bf76f10e4930c71797b2188e1e4f077

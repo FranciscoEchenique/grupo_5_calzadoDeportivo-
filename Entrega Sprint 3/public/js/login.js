@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 window.addEventListener("load",function(event){
+=======
+window.addEventListener("load",function( ){
+>>>>>>> 466a555d5bf76f10e4930c71797b2188e1e4f077
    
     let formularioLogin = document.querySelector("form.formulario");
     let email = document.querySelector("#usuario");
@@ -6,6 +10,10 @@ window.addEventListener("load",function(event){
 
     
     formularioLogin.addEventListener("submit", function(e){
+<<<<<<< HEAD
+=======
+        console.log("capturado")
+>>>>>>> 466a555d5bf76f10e4930c71797b2188e1e4f077
         let errores = [];
         if(email.value == ""){
             errores.push("Ingresa tu email");

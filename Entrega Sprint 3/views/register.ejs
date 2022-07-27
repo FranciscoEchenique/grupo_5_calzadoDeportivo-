@@ -1,79 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
+
 
 <head>
-    <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/styles.css">
-        <script src="https://kit.fontawesome.com/8cc76fc728.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-        <title>Registro SportShoes</title>
-
-Enviar mensaje a #general
-
-</head>
-
+    
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/8cc76fc728.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <title>Registro SportShoes</title>
+</head> 
 <body>
-    <%- include('./partials/header') %>
-    <form action="/register" method="POST" class="formulario-registro" enctype="multipart/form-data">
-        <h3>CREA TU CUENTA</h3>
-        <div>
-            <label for="nombre" class="label-registro">Ingrese su nombre:</label>
-            <input class="botones" type="text" name="nombre" value="<%= locals.old ? locals.old.nombre : null %>">
-            <% if (locals.errors && errors.nombre) { %>
-                <div class="text-danger">
-                    <%= errors.nombre.msg %>   
-                </div> 
-            <% } %>
-            <label for="apellido" class="label-registro">Ingrese su apellido</label>
-            <input class="botones" type="text" name="apellido" value="<%= locals.old ? locals.old.apellido : null %>">
-            <% if (locals.errors && errors.apellido) { %>
-                <div class="text-danger">
-                    <%= errors.apellido.msg %>   
-                </div> 
-            <% } %>
-            <label for="email" class="label-registro">Ingrese su email</label>
-            <input class="botones" type="email" name="email" value="<%= locals.old ? locals.old.email : null %>">
-            <% if (locals.errors && errors.email) { %>
-                <div class="text-danger">
-                    <%= errors.email.msg %>   
-                </div> 
-            <% } %>
-        </div>
-        <div>
-            <label for="password" class="label-registro">Ingrese su contraseña</label>
-            <input class="botones" type="password" name="password" value="<%= locals.old ? locals.old.password : null %>">
-            <% if (locals.errors && errors.password) { %>
-                <div class="text-danger">
-                    <%= errors.password.msg %>   
-                </div> 
-            <% } %>
-            <label for="passwordConfirm" class="label-registro">Ingrese nuevamente su contraseña</label>
-            <input class="botones" type="password" name="passwordConfirm" value="<%= locals.old ? locals.old.passwordConfirm : null %>">
-            <% if (locals.errors && errors.passwordConfirm) { %>
-                <div class="text-danger">
-                    <%= errors.passwordConfirm.msg %>   
-                </div> 
-            <% } %>
-        </div>
-        <div>
-            <label for="imagenUsuario" class="label-registro">Cargue su avatar</label>
-            <input type="file" name="imagenUsuario" id="imagenUsuario" class="botones">
-            <% if (locals.errors && errors.imagenUsuario) { %>
-                <div class="text-danger">
-                    <%= errors.imagenUsuario.msg %>   
-                </div> 
-            <% } %>
-        </div>
-        <input type="checkbox" name="terminos">
-        <label for="terminos">Acepto <a href="#">Términos y Condiciones.</a></label>
-        <button class="boton-registro" type="submit">REGISTRARME</button>
-        <p><a href="/login">¿Ya tenés una cuenta?</a></p>
-    </form>
-    <%- include('./partials/footer') %>
+<%- include('./partials/header') %>
+<form class="formulario-registro" action="/register" method="POST" >
+    <h3>CREA TU CUENTA</h3>
+    <div>
+        <div class="errores"></div>
+        <label for="nombre" class="label-registro">Ingrese su nombre:</label>
+        <input class="botones" type="text" name="nombre" id="nombre" value="<%= locals.old ? locals.old.nombre : null %>">
+        <% if (locals.errors && errors.nombre) { %>
+            <div class="text-danger">
+                <%= errors.nombre.msg %>   
+            </div> 
+        <% } %>
+        <label for="apellido" class="label-registro">Ingrese su apellido</label>
+        <input class="botones" type="text" name="apellido"  id="apellido" value="<%= locals.old ? locals.old.apellido : null %>">
+        <% if (locals.errors && errors.apellido) { %>
+            <div class="text-danger">
+                <%= errors.apellido.msg %>   
+            </div> 
+        <% } %>
+        <label for="email" class="label-registro">Ingrese su email</label>
+        <input class="botones" type="email" name="email" id="email" value="<%= locals.old ? locals.old.email : null %>">
+        <% if (locals.errors && errors.email) { %>
+            <div class="text-danger">
+                <%= errors.email.msg %>   
+            </div> 
+        <% } %>
+    </div>
+    <div>
+        <label for="password" class="label-registro">Ingrese su contraseña</label>
+        <input class="botones" type="password" name="password" id="password"  value="<%= locals.old ? locals.old.password : null %>">
+        <% if (locals.errors && errors.password) { %>
+            <div class="text-danger">
+                <%= errors.password.msg %>   
+            </div> 
+        <% } %>
+        <label for="passwordConfirm" class="label-registro">Ingrese nuevamente su contraseña</label>
+        <input class="botones" type="password" name="passwordConfirm"  value="<%= locals.old ? locals.old.passwordConfirm : null %>">
+        <% if (locals.errors && errors.passwordConfirm) { %>
+            <div class="text-danger">
+                <%= errors.passwordConfirm.msg %>   
+            </div> 
+        <% } %>
+    </div>
+    <div>
+        <label for="imagenUsuario" class="label-registro">Cargue su avatar</label>
+        <input type="file" name="imagenUsuario" id="imagenUsuario" class="botones">
+        <% if (locals.errors && errors.imagenUsuario) { %>
+            <div class="text-danger">
+                <%= errors.imagenUsuario.msg %>   
+            </div> 
+        <% } %>
+    </div>
+    <input type="checkbox" name="terminos" id="terminos">
+    <label for="terminos">Acepto <a href="#">Términos y Condiciones.</a></label>
+    <div><button class="boton-registro" type="submit">REGISTRARME</button></div>
+    <p><a href="/login">¿Ya tenés una cuenta?</a></p>
+</form>
+
+<%- include('./partials/footer') %>
+<script src="./js/register.js"></script>
 </body>
 
 </html>

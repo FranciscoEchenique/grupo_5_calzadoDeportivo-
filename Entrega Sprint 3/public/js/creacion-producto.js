@@ -5,8 +5,6 @@
 // const imagen = document.querySelector("#imagenProducto");
 // const descripcion = document.querySelector("#descripcion");
 
-const cookieParser = require("cookie-parser");
-
 
 
 // const nombreError = document.querySelector("#nombreError");

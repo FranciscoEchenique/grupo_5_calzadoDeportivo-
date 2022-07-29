@@ -1,3 +1,4 @@
+
 window.onload =function(){
    
     let formularioLogin = document.querySelector("form.formulario");
@@ -28,5 +29,3 @@ window.onload =function(){
        
  
     })
- 
-} 

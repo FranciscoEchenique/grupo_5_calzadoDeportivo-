@@ -1077,7 +1077,6 @@ input#imagenProducto {
     width: 150px;
     height: 40px;
     margin-top: 10px;
-}
 
 .errores-email, .errores-nombre, .errores-apellido{
     
@@ -1087,7 +1086,8 @@ input#imagenProducto {
    opacity: 60%;
     
 }
-.errores-password, .errores-passwordConfirm, .errores-passwordConfirm2{
+.errores-password, .errores-passwordConfirm, {
+
     
     text-align: center;
     color: red;

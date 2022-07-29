@@ -1079,7 +1079,15 @@ input#imagenProducto {
     margin-top: 10px;
 }
 
-.errores{
+.errores-email, .errores-nombre, .errores-apellido{
+    
+    text-align: center;
+    color: red;
+   background-color:white;
+   opacity: 60%;
+    
+}
+.errores-password, .errores-passwordConfirm, .errores-passwordConfirm2{
     
     text-align: center;
     color: red;

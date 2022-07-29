@@ -1087,7 +1087,7 @@ input#imagenProducto {
    opacity: 60%;
     
 }
-.errores-password, .errores-passwordConfirm, .errores-passwordConfirm2{
+.errores-password, .errores-passwordConfirm{
     
     text-align: center;
     color: red;

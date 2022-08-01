@@ -1,7 +1,10 @@
-
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
     <script src="https://kit.fontawesome.com/8cc76fc728.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -14,7 +17,14 @@
 <form class="formulario-registro" action="/register" method="POST" >
     <h3>CREA TU CUENTA</h3>
     <div>
-        <div class="errores"></div>
+        <div class="errores-nombre"></div>
+        <div class="errores-apellido"></div>
+        <div class="errores-email"></div>
+        <div class="errores-password"></div>
+        <div class="errores-passwordConfirm"></div>
+   
+
+
         <label for="nombre" class="label-registro">Ingrese su nombre:</label>
         <input class="botones" type="text" name="nombre" id="nombre" value="<%= locals.old ? locals.old.nombre : null %>">
         <% if (locals.errors && errors.nombre) { %>
@@ -46,12 +56,12 @@
             </div> 
         <% } %>
         <label for="passwordConfirm" class="label-registro">Ingrese nuevamente su contraseña</label>
-        <input class="botones" type="password" name="passwordConfirm"  value="<%= locals.old ? locals.old.passwordConfirm : null %>">
+        <input class="botones" type="password" name="passwordConfirm" id="passwordConfirm"  value="<%= locals.old ? locals.old.passwordConfirm : null %>">
         <% if (locals.errors && errors.passwordConfirm) { %>
             <div class="text-danger">
                 <%= errors.passwordConfirm.msg %>   
             </div> 
-        <% } %>
+        <% } %> 
     </div>
     <div>
         <label for="imagenUsuario" class="label-registro">Cargue su avatar</label>

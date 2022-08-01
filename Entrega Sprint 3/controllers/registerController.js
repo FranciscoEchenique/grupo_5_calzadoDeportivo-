@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const {validationResult} = require('express-validator');
 const bcrypts = require('bcryptjs');
+const { log } = require('console');
 
 const usuarios_path = path.join(__dirname, '../data/usuarios.json');
 const leerUsuarios = fs.readFileSync(usuarios_path, 'utf-8');
@@ -16,7 +17,8 @@ const almacenarUsuario = (req, res) => {
     const apellido = req.body.apellido;
     const email = req.body.email;
     const password = bcrypts.hashSync(req.body.password, 10);
-    
+    const errors = validationResult(req);
+
     if (req.file == undefined){
         return res.render('register', {
             errors: {
@@ -33,7 +35,6 @@ const almacenarUsuario = (req, res) => {
         element.email == email
     );
 
-    const errors = validationResult(req);
 
     if (errors.errors.length > 0){
        return res.render('register', {errors: errors.mapped(), old: req.body})

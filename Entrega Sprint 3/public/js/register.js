@@ -9,18 +9,18 @@ window.onload=function( ){
     
     formularioRegistro.addEventListener("submit", function(e){
            
-            console.log("capturando formulario");
+        e.preventDefault();
+        console.log("capturando formulario");
         let errores = {
             nombre:"",
             apellido:"",
             email:"",
             password:"",
             passwordConfirm:"",
-         
         };
         if(nombre.value == ""){
             errores.nombre= "Ingresa tu nombre";
-        }
+        } 
         if(apellido.value == ""){
             errores.apellido= "Ingresa tu apellido";
         }            
@@ -32,14 +32,11 @@ window.onload=function( ){
         }
         if(passwordConfirm.value == "" ){
         errores.passwordConfirm="Reingresa tu contraseña";
-          e.preventDefault();
         }
-
-
-
+        if (errores.nombre == '' && errores.apellido == ''  && errores.email == '' && errores.password == ''  && errores.passwordConfirm == '') {
+            formularioRegistro.submit();
+        }
         
-           
-
             let ulErrores = document.querySelector("div.errores-nombre");
                 ulErrores.innerHTML = "<h4>" + errores.nombre + "</h4>" 
             let ulErrores1 = document.querySelector("div.errores-apellido");
@@ -50,8 +47,6 @@ window.onload=function( ){
                 ulErrores3.innerHTML = "<h4>" + errores.password + "</h4>"
             let ulErrores4 = document.querySelector("div.errores-passwordConfirm");
                 ulErrores4.innerHTML = "<h4>" + errores.passwordConfirm + "</h4>"
-
-
-    })
+    });
 } 
 

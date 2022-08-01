@@ -16,5 +16,13 @@
     "password": "$2a$10$m0utTJv0zkC7wz5QhBVcC.e8woLD9JYoQ7srpd3/xOyaCAUnoW0ru",
     "imagen": "/images/fotosUsuarios/1656803495099.jpg",
     "rol": "admin"
+  },
+  {
+    "id": 3,
+    "nombre": "Francisco",
+    "apellido": "Echenique",
+    "email": "123456@gmail.com",
+    "password": "$2a$10$sZJDtPFJSSmhjS1BWXpYHeAdDdnHhHLqk8YIp6cqVgT9uAizXneKm",
+    "imagen": "/images/fotosUsuarios/1659381161342.png"
   }
 ]

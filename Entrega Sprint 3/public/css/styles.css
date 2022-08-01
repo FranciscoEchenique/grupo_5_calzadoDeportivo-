@@ -1095,3 +1095,12 @@ input#imagenProducto {
    opacity: 60%;
     
 }
+
+
+.errores-nombre, .errores-descripcion{
+    text-align: center;
+    color: red;
+    background-color: white;
+    opacity: 60%;
+
+}

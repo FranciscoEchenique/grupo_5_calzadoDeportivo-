@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const db = require('../database/models');
 const { Op } = require("sequelize");
+const {validationResult} = require('express-validator');
 
 const Zapatillas = db.Zapatillas;
 const Marcas = db.Marcas;
@@ -13,11 +14,28 @@ const crear = (req, res) => {
 const almacenar = (req, res) => {
     const id_marca = parseInt(req.body.marca, 10);
     const nombre = req.body.nombre;
-    const foto = '/images/' + req.file.filename;
     const precio = req.body.precio;
     const descuento = req.body.descuento;
     const categoria = req.body.categoria;
     const descripcion = req.body.descripcion;
+    
+    const errors = validationResult(req);
+
+    if (req.file == undefined){
+        return res.render('formulario-creacion', {
+            errors: {
+                ...errors.mapped(),
+                imagenProducto: {
+                    msg: 'Por favor, ingrese una imagen'
+                }
+        }, old: req.body});
+    } else {
+        var foto = '/images/' + req.file.filename;
+    }
+
+    if (errors.errors.length > 0){
+        return res.render('formulario-creacion', {errors: errors.mapped(), old: req.body});
+    }
 
     Zapatillas.create({
         id_marca: id_marca,

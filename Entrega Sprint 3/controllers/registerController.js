@@ -2,7 +2,6 @@ const fs = require('fs');
 const path = require('path');
 const {validationResult} = require('express-validator');
 const bcrypts = require('bcryptjs');
-const { log } = require('console');
 
 const usuarios_path = path.join(__dirname, '../data/usuarios.json');
 const leerUsuarios = fs.readFileSync(usuarios_path, 'utf-8');

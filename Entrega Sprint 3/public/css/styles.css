@@ -990,7 +990,7 @@ table, th, td {
 }
 .contenedores-formulario-creacion{
     max-width: 70%;
-    padding: 20px;
+    padding: 20px 20px 10px 20px;
     margin: auto;
 }
 .contenedor-boton-creacion{
@@ -1014,6 +1014,11 @@ input#imagenProducto {
     color: white;
     text-decoration: underline;
     text-decoration-color: black;
+}
+.text-danger-creacion{
+    color: red;
+    font-size: 16px;
+    text-decoration: underline;
 }
 /*------------------------------- Formulario eliminación productos -------------------------------*/
 .div-eliminacion-productos{

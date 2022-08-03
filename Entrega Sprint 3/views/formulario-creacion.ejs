@@ -20,16 +20,31 @@
         <div class="contenedores-formulario-creacion">
             <label for="nombre" class="label-creacion-productos">Nombre del producto:</label>
             <input type="text" id="nombre" name="nombre" placeholder="Ej: Zapatillas Nike Air Max" class="input-creacion-productos">
+            <% if (locals.errors && errors.nombre) { %>
+                <div class="text-danger-creacion">
+                    <%= errors.nombre.msg %>   
+                </div> 
+            <% } %>
         </div>
 
         <div class="contenedores-formulario-creacion">
             <label for="precio" class="label-creacion-productos">Precio del producto:</label>
             <input type="text" id="precio" name="precio" placeholder="Ej: 1.000$" class="input-creacion-productos">
+            <% if (locals.errors && errors.precio) { %>
+                <div class="text-danger-creacion">
+                    <%= errors.precio.msg %>   
+                </div> 
+            <% } %>
         </div>
 
         <div class="contenedores-formulario-creacion">
             <label for="descuento" class="label-creacion-productos">Descuento del producto:</label>
             <input type="text" id="descuento" name="descuento" placeholder="Ej: 10% OFF" class="input-creacion-productos">
+            <% if (locals.errors && errors.descuento) { %>
+                <div class="text-danger-creacion">
+                    <%= errors.descuento.msg %>   
+                </div> 
+            <% } %>
         </div>
 
         <div class="contenedores-formulario-creacion">
@@ -40,6 +55,11 @@
                 <option value="mas-comprado">Más comprados</option>
                 <option value="mejores-ofertas">Mejores ofertas</option>
             </select>
+            <% if (locals.errors && errors.categoria) { %>
+                <div class="text-danger-creacion">
+                    <%= errors.categoria.msg %>   
+                </div> 
+            <% } %>
         </div>
         <div class="contenedores-formulario-creacion">
             <label for="marca">Marca:</label>
@@ -48,15 +68,30 @@
                 <option value="2">Adidas</option>
                 <option value="3">Puma</option>
             </select>
+            <% if (locals.errors && errors.marca) { %>
+                <div class="text-danger-creacion">
+                    <%= errors.marca.msg %>   
+                </div> 
+            <% } %>
         </div>
         <div class="contenedores-formulario-creacion">
             <label for="imagenProducto" class="label-creacion-productos">Imagen del producto</label>
             <input type="file" name="imagenProducto" id="imagenProducto">
+            <% if (locals.errors && errors.imagenProducto) { %>
+                <div class="text-danger-creacion">
+                    <%= errors.imagenProducto.msg %>   
+                </div> 
+            <% } %>
         </div>
 
         <div class="contenedores-formulario-creacion">
             <label for="descripcion" class="label-creacion-productos">Descripción del producto:</label>
             <textarea name="descripcion" id="descripcion" class="input-creacion-productos"></textarea>
+            <% if (locals.errors && errors.descripcion) { %>
+                <div class="text-danger-creacion">
+                    <%= errors.descripcion.msg %>   
+                </div> 
+            <% } %>
         </div>
 
         <div class="contenedor-boton-creacion">

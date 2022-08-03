@@ -24,5 +24,14 @@
     "email": "123456@gmail.com",
     "password": "$2a$10$sZJDtPFJSSmhjS1BWXpYHeAdDdnHhHLqk8YIp6cqVgT9uAizXneKm",
     "imagen": "/images/fotosUsuarios/1659381161342.png"
+  },
+  {
+    "id": 4,
+    "nombre": "Christian",
+    "apellido": "Leonel",
+    "email": "christiandiazluna@gmail.com",
+    "password": "$2a$10$yDdcJaGf6aSSZrc/dphjk.DCYk5EJHvDL5AKJlH31pBKL9FvqJSZC",
+    "imagen": "/images/fotosUsuarios/1659382481119.jpg",
+    "rol": "admin"
   }
 ]

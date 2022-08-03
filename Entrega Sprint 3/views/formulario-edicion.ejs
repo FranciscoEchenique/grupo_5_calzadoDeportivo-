@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     
-    
+    <script src="./js/forulario-edicion.js"></script>
 
     <title>Bienvenidos a SportShoes</title>
 </head>
@@ -36,7 +36,7 @@
     
                     <div class="contenedores-formulario-creacion">
                         <label for="precio" class="label-creacion-productos">Precio del producto:</label>
-                        <input type="number" id="precio" name="precio" value="<%= productoPorEditar.precio %>"
+                        <input type="text" id="precio" name="precio" value="<%= productoPorEditar.precio %>"
                             class="input-creacion-productos" required>
                     </div>
     
@@ -75,7 +75,7 @@
                     </div>
                     <p class="warnings" id="warnings"></p>
 
-                    <script src="./js/forulario-edicion.js"></script>
+                    
                 </form>
 
             

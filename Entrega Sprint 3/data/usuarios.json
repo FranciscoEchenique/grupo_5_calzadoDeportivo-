@@ -9,20 +9,29 @@
     "rol": "admin"
   },
   {
-    "id": 2,
-    "nombre": "Galo",
-    "apellido": "Tots",
-    "email": "galotots@gmail.com",
-    "password": "$2a$10$hfr1nWHW/uIYETlfib9qleAUc1shrvTOWquuvWGf6vzn.v2APc/1e",
-    "imagen": "/images/fotosUsuarios/1654730267396.png"
-  },
-  {
     "id": 3,
     "nombre": "Paolo",
     "apellido": "Botto",
     "email": "paolobotto1981@gmail.com",
     "password": "$2a$10$m0utTJv0zkC7wz5QhBVcC.e8woLD9JYoQ7srpd3/xOyaCAUnoW0ru",
     "imagen": "/images/fotosUsuarios/1656803495099.jpg",
+    "rol": "admin"
+  },
+  {
+    "id": 3,
+    "nombre": "Francisco",
+    "apellido": "Echenique",
+    "email": "123456@gmail.com",
+    "password": "$2a$10$sZJDtPFJSSmhjS1BWXpYHeAdDdnHhHLqk8YIp6cqVgT9uAizXneKm",
+    "imagen": "/images/fotosUsuarios/1659381161342.png"
+  },
+  {
+    "id": 4,
+    "nombre": "Christian",
+    "apellido": "Leonel",
+    "email": "christiandiazluna@gmail.com",
+    "password": "$2a$10$yDdcJaGf6aSSZrc/dphjk.DCYk5EJHvDL5AKJlH31pBKL9FvqJSZC",
+    "imagen": "/images/fotosUsuarios/1659382481119.jpg",
     "rol": "admin"
   }
 ]

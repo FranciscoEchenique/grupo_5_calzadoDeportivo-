@@ -18,7 +18,7 @@
         <h2 class="titulo-creacion-productos">Elimina un producto</h2>
         <div class="div-eliminacion-productos">
         <article class="articulo-eliminacion-productos">
-           <img src=<%= productoAEliminar.foto %>
+           <img src=<%= productoAEliminar.foto %>>
             <div>
                 <p>
                     <%= productoAEliminar.nombre %>
@@ -28,7 +28,7 @@
                 </h4>
             </div>
         </article>
-        <form  class="formulario-eliminacion-productos" action="/productos/eliminar/<%= productoAEliminar.id %>?_method=DELETE" method="POST">
+        <form  class="formulario-eliminacion-productos" action="/productos/eliminar/<%= productoAEliminar.id_zapatilla %>?_method=DELETE" method="POST">
             <button class="boton-eliminacion-productos" type="submit">ELIMINAR</button>
         </form>
         </div>

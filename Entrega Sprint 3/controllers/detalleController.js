@@ -1,38 +1,43 @@
 const fs = require('fs');
 const path = require('path');
 
-const productos_path = path.join(__dirname, '../data/productsDataBase.json');
-const leerProductos = fs.readFileSync(productos_path, 'utf-8');
-const productos = JSON.parse(leerProductos);
+const db = require('../database/models');
 
-const mejoresProductos = productos.filter(function(elemento){ return elemento.categoria === "mejores-productos"});
-
-const masComprado = productos.filter(function(elemento){ return elemento.categoria === "mas-comprado"});
-
-const mejoresOfertas = productos.filter(function(elemento){ return elemento.categoria === "mejores-ofertas"});
+const Zapatillas = db.Zapatillas;
+const Marcas = db.Marcas;
+const Usuarios = db.Usuarios;
 
 const mejoresOfertasRuta = (req, res) => {
     const id = req.params.iDproducto;
 
     const userLogged = req.session.userLogged;
 
-    const productoMejoresOferas =  mejoresOfertas.find((element) =>{
-        return element.id == id
-    });
-    
-    res.render('detalle-de-producto', {producto: productoMejoresOferas, userLogged});
+    Zapatillas.findAll({
+        where: {
+            categoria: 'mejores-ofertas'
+        }
+    })
+    .then(zapatillas => {
+        let mejoresOfertas = zapatillas.find(producto => {return producto.id_zapatilla == id});
+        res.render('detalle-de-producto', {producto: mejoresOfertas, userLogged});
+    })
 };
 
 const masCompradoRuta = (req, res) => {
     const id = req.params.iDproducto;
 
     const userLogged = req.session.userLogged;
-
-    const productoMasComprado = masComprado.find((element) =>{
-        return element.id == id
-    });
     
-    res.render('detalle-de-producto', {producto: productoMasComprado, userLogged});
+    Zapatillas.findAll({
+        where: {
+            categoria: 'mas-comprado'
+        }
+    })
+    .then(zapatillas => {
+        let masComprado = zapatillas.find(producto => {return producto.id_zapatilla == id});
+        res.render('detalle-de-producto', {producto: masComprado, userLogged});
+    })
+
 };
 
 const mejoresProductosRuta = (req, res) => {
@@ -40,10 +45,16 @@ const mejoresProductosRuta = (req, res) => {
 
     const userLogged = req.session.userLogged;
 
-    const mejorProducto = mejoresProductos.find((element) =>{
-        return element.id == id
-    });
-    res.render('detalle-de-producto', {producto: mejorProducto, userLogged});
+    Zapatillas.findAll({
+        where: {
+            categoria: 'mejores-productos'
+        }
+    })
+    .then(zapatillas => {
+        let mejorProducto = zapatillas.find(producto => {return producto.id_zapatilla == id});
+        res.render('detalle-de-producto', {producto: mejorProducto, userLogged});
+    })
+
 };
 
 const detalleController = {

@@ -1,7 +1,8 @@
 function sesionMiddleware (req, res, next){
     if (req.session.userLogged){
         next()
+    } else {
+        res.send('No tienes permisos para ingresar a esta página')
     }
-    res.send('No tienes permisos para ingresar a esta página')
 };
 module.exports = sesionMiddleware;

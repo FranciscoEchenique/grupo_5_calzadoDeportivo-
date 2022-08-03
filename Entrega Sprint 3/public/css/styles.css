@@ -425,7 +425,7 @@ div .logo{
 
 .formulario-registro {
     width: 360px;
-    background: #ebebeb;
+    background: #205375;
     padding: 30px;
     margin: auto;
     margin-top: 105px;
@@ -435,6 +435,7 @@ div .logo{
 }
 
 .formulario-registro h3 {
+    color: #ebebeb;
     font-size: 22px;
     margin-bottom: 20px;
     text-align: center; 
@@ -477,8 +478,13 @@ div .logo{
     font-size: 14px;
 }
 .label-registro{
+    color: #ebebeb;
     font-size: 13px;
-    font-weight: bolder;
+    
+}
+.boton-registro{
+    color: #ebebeb;
+    background-color: #238c31;
 }
 
 /*DETALLE DE PRODUCTO*/
@@ -984,7 +990,7 @@ table, th, td {
 }
 .contenedores-formulario-creacion{
     max-width: 70%;
-    padding: 20px;
+    padding: 20px 20px 10px 20px;
     margin: auto;
 }
 .contenedor-boton-creacion{
@@ -1008,6 +1014,11 @@ input#imagenProducto {
     color: white;
     text-decoration: underline;
     text-decoration-color: black;
+}
+.text-danger-creacion{
+    color: red;
+    font-size: 16px;
+    text-decoration: underline;
 }
 /*------------------------------- Formulario eliminación productos -------------------------------*/
 .div-eliminacion-productos{
@@ -1073,11 +1084,28 @@ input#imagenProducto {
     margin-top: 10px;
 }
 
-.errores{
+.errores-email, .errores-nombre, .errores-apellido{
     
     text-align: center;
     color: red;
    background-color:white;
    opacity: 60%;
     
+}
+.errores-password, .errores-passwordConfirm{
+    
+    text-align: center;
+    color: red;
+   background-color:white;
+   opacity: 60%;
+    
+}
+
+
+.errores-nombre, .errores-descripcion{
+    text-align: center;
+    color: red;
+    background-color: white;
+    opacity: 60%;
+
 }
